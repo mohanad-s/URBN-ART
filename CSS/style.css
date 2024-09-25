@@ -275,3 +275,112 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+/* Restore style to click buttons */
+button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Fix overlap of auth buttons with logo */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3; /* Increase z-index to be above the logo */
+}
+
+@media (max-width: 768px) {
+    .auth-buttons {
+        top: auto;
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+/* Login and Signup page fixes */
+.login-box, .signup-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+    margin-top: 80px; /* Add space at the top for the logo */
+}
+
+.login-logo, .signup-logo {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: auto;
+}
+
+.login-box h2, .signup-box h2 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.login-box label, .signup-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.login-box input, .signup-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+.login-box button, .signup-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-box button:hover, .signup-box button:hover {
+    background-color: #444;
+}
+
+.login-box p, .signup-box p {
+    margin-top: 20px;
+    color: #000;
+}
+
+.login-box a, .signup-box a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-box, .signup-box {
+        padding: 1.5rem;
+    }
+
+    .login-logo, .signup-logo {
+        width: 100px;
+        top: -50px;
+    }
+}
