@@ -46,7 +46,7 @@ header {
     left: 0; /* Align the image at the left */
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    background-image: url('C:\\Users\\the_e\\OneDrive\\DESKTOB\\KAU5\\403\\Assignment 1\\images\\head.png'); /* Background image for header */
+    background-image: url('images\\head.png'); /* Background image for header */
     background-size: cover; /* Ensure image covers the header area */
     background-position: center; /* Center the background image */
     z-index: 1; /* Ensure image is behind other header elements */
@@ -83,7 +83,7 @@ footer {
 /* Specific login-container styling */
 .login-container {
     height: 100vh;
-    background-image: url('C:\\Users\\the_e\\OneDrive\\DESKTOB\\KAU5\\403\\Assignment 1\\images\\backgr.png'); /* Apply background image to login-container */
+    background-image: url('images\\backgr.png'); /* Apply background image to login-container */
     background-size: cover; /* Ensure the image covers the entire screen */
     background-position: center; /* Center the background image */
     display: flex; /* Use flexbox layout for images */
@@ -165,7 +165,7 @@ footer {
 /* Specific signup-container styling */
 .signup-container {
     height: 100vh; /*This is to make sure that the contents fit inside the container */
-    background-image: url('C:\\Users\\the_e\\OneDrive\\DESKTOB\\KAU5\\403\\Assignment 1\\images\\backgr.png'); /* Apply background image to signup-container */
+    background-image: url('images\\backgr.png'); /* Apply background image to signup-container */
     background-size: cover; /* Ensure the image covers the entire screen */
     background-position: center; /* Center the background image */
     display: flex;
