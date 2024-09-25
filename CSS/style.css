@@ -1,603 +1,277 @@
-/* Start of General Styles: styles that are applied to all pages */
+/* General Styles */
 body {
-    font-family: 'Oswald', Arial, sans-serif; /* Use Oswald font for all text */
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
-    box-sizing: border-box; /* Ensure padding and border are included in total width and height */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Arrange body content vertically */
-    min-height: 100vh; /* Ensure body takes full viewport height */
+    font-family: 'Oswald', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
-    flex: 1; /* Allow main content to grow and take available space */
-    display: flex; /* Use flexbox layout for main content */
-    flex-direction: column; /* Stack items vertically in main section */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Ensure text is centered */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
 
 /* Header Section */
 header {
-    position: relative; /* Allows positioning child elements absolutely */
-    width: 101%; /* Set header width slightly larger than full width */
-    height: 150px; /* Set fixed height for the header */
+    position: relative;
+    width: 100%;
+    height: 150px;
 }
 
-/* Centered logo for index page */
 .header-logo {
-    position: absolute; /* Absolute positioning for logo */
-    top: 1px; /* Place logo at the top with small offset */
-    left: 50%; /* Center logo horizontally */
-    transform: translateX(-50%); /* Correct centering by shifting left by 50% */
-    z-index: 2; /* Ensure logo is above other elements */
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .header-logo img {
-    width: 150px; /* Set fixed width for logo */
-    height: auto; /* Keep the aspect ratio */
-}
-
-/* Background image for header */
-.header-img {
-    position: absolute; /* Make the background image cover the entire header */
-    top: 0; /* Align the image at the top */
-    left: 0; /* Align the image at the left */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-image: url('..\\images\\head.png'); /* Background image for header */
-    background-size: cover; /* Ensure image covers the header area */
-    background-position: center; /* Center the background image */
-    z-index: 1; /* Ensure image is behind other header elements */
-}
-
-/* Authentication buttons (Login and Sign Up) */
-.auth-buttons {
-    position: absolute; /* Position buttons absolutely in the header */
-    top: 20px; /* Align 20px from the top */
-    right: 20px; /* Align 20px from the right */
-    z-index: 2; /* Keep buttons above the background image */
-}
-
-.auth-buttons button {
-    margin: 0 10px; /* Add horizontal space between buttons */
-    padding: 10px 20px; /* Add padding inside the buttons */
-    background-color: #000; /* Set button background color */
-    color: #fff; /* Set button text color */
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-.auth-buttons button:hover {
-    background-color: #444; /* Change background color on hover */
-}
-
-/* Footer */
-footer {
-    background-color: #f8f8f8; /* Set light background color for footer */
-    padding: 20px 0; /* Add padding at top and bottom */
-    text-align: center; /* Center-align the text in the footer */
-    width: 100%; /* Make footer full width */
-}
-/* Specific login-container styling */
-.login-container {
-    height: 100vh;
-    background-image: url('..\\images\\backgr.png'); /* Apply background image to login-container */
-    background-size: cover; /* Ensure the image covers the entire screen */
-    background-position: center; /* Center the background image */
-    display: flex; /* Use flexbox layout for images */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Styling for the login box */
-.login-box {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: center;
-    position: relative;
-}
-
-/* Styling for the logo inside the login box */
-.login-logo {
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
+    width: 150px;
     height: auto;
 }
 
-.login-logo img {
+.header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-image: url('..\\images\\head.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
 }
 
-.login-box h2 {
-    margin-bottom: 20px;
-    color: #000;
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
 }
 
-.login-box label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    color: #000;
-}
-
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.login-box button {
-    width: 100%;
-    padding: 10px;
+.auth-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
     background-color: #000;
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
 }
 
-.login-box button:hover {
+.auth-buttons button:hover {
     background-color: #444;
 }
 
-.login-box p {
-    margin-top: 20px;
-    color: #000;
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
 }
 
-.login-box a {
-    color: #000;
-    text-decoration: underline;
-}
-
-
-
-/* Specific signup-container styling */
-.signup-container {
-    height: 100vh; /*This is to make sure that the contents fit inside the container */
-    background-image: url('..\\images\\backgr.png'); /* Apply background image to signup-container */
-    background-size: cover; /* Ensure the image covers the entire screen */
-    background-position: center; /* Center the background image */
+/* Login and Signup Containers */
+.login-container, .signup-container {
+    height: 100vh;
+    background-image: url('..\\images\\backgr.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Styling for the signup box */
-.signup-box {
+.login-box, .signup-box {
     background-color: #fff;
-    padding: 40px;
+    padding: 2rem;
     border-radius: 8px;
-    width: 300px;
-    height: 500px;
+    width: 90%;
+    max-width: 300px;
     text-align: center;
     position: relative;
 }
 
-/* Styling for the logo inside the signup box */
-.signup-logo {
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: auto;
-}
-
-.signup-logo img {
-    width: 100%;
-}
-
-.signup-box h2 {
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.signup-box label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    color: #000;
-}
-
-.signup-box input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.signup-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.signup-box button:hover {
-    background-color: #444;
-}
-
-.signup-box p {
-    margin-top: 20px;
-    color: #000;
-}
-
-.signup-box a {
-    color: #000;
-    text-decoration: underline;
-}
-/* end of General Styles */
-
-
-/* Start of Styles for home page(index.html) section */
-/* Updated styles for brand-description */
+/* Home Page */
 .brand-description {
-    padding: 10px 150px; /* Add padding to the brand description */
-    font-size: 21px; /* Set font size for the text */
-    line-height: 1.6; /* Set line spacing */
-    color: #333; /* Set text color */
-    text-align: left; /* Align text to the left */
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
 }
 
 .brand-description h2 {
-    font-size: 36px; /* Set font size for the second-level heading */
-    margin-bottom: 10px; /* Add space below the heading */
-    text-align: center; /* Center the heading */
-    color: #000; /* Set text color */
-    margin-bottom: 30px; /* Add space below the heading */
-    padding-bottom: 20px; /* Add padding below the heading */
-    border-bottom: 1px solid #ddd; /* Add a border below the heading */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #000;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
 }
 
 .brand-description h3 {
-    font-size: 22px; /* Set font size for the third-level heading */
-    margin-top: 30px; /* Add space above the heading */
-    color: #444; /* Set text color */
-    text-align: left; /* Align heading to the left */
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    color: #444;
+    text-align: left;
 }
 
-/* Product Images */
 .product-images {
-    display: flex; /* Use flexbox layout for images */
-    justify-content: center; /* Center the images horizontally */
-    gap: 20px; /* Add space between images */
-    opacity: 40%; /* Set transparency for the images */
-    margin-bottom: 30px; /* Add space below the images */
-    padding-bottom: 20px; /* Add padding below the images */
-    border-bottom: 1px solid #ddd; /* Add a border below the images */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    opacity: 40%;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
 }
 
 .product-images img {
-    width: 150px; /* Set width for product images */
-    margin-right: 70px; /* Add space to the right of each image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
 }
 
-/* Services Button Section */
-.services-button {
-    display: flex; /* Use flexbox layout for button section */
-    justify-content: center; /* Center the button horizontally */
-    margin-bottom: 40px; /* Add space below the button */
-}
-
-.services-button button {
-    padding: 15px 40px; /* Add padding inside the button */
-    background-color: #000; /* Set button background color */
-    color: #fff; /* Set button text color */
-    font-size: 18px; /* Set font size for the button */
-    border: none; /* Remove default border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-weight: bold; /* Make text bold */
-}
-
-.services-button button:hover {
-    background-color: #444; /* Change background color on hover */
-}
-/* end of Styles for home page(index.html) section */
-
-
-/* start of Styles for Service page(services.html) section */
-/* Our Services Heading */
-.services-menu h2 {
-    font-size: 36px; /* Set font size for the services heading */
-    margin-bottom: 40px; /* Add space below the heading */
-    font-weight: bold; /* Make the heading bold */
-    color: #000; /* Set text color */
-}
-
-/* Services Page Specific Styles */
+/* Services Page */
 .services-menu {
-    display: flex; /* Use flexbox layout for services menu */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    height: calc(100vh - 350px); /* Set dynamic height */
+    height: auto;
+    min-height: calc(100vh - 350px);
+    padding: 2rem 0;
 }
 
 .menu-buttons {
-    display: grid; /* Use grid layout for menu buttons */
-    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
-    gap: 20px; /* Add space between buttons */
-    justify-items: center; /* Center buttons within the grid */
-    margin-top: 20px; /* Add space above the buttons */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 1rem;
 }
 
 .menu-buttons button {
-    height: 100px; /* Set button height */
-    width: 400px; /* Set button width */
-    padding: 40px 80px; /* Add padding inside the button */
-    background-color: #000; /* Set background color */
-    color: #fff; /* Set text color */
-    font-size: 24px; /* Set font size */
-    border: none; /* Remove default border */
-    border-radius: 20px; /* Make the button edges rounded */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-weight: bold; /* Make text bold */
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.menu-buttons button:hover {
-    background-color: #444; /* Change background color on hover */
-}
-
-.menu-buttons button:nth-child(4) {
-    text-transform: capitalize; /* Capitalize only the first letter of each word */
-}
-/* end of Styles for Service page(services.html) section */
-
-
-/* start of Styles for Contact us page(contact.html) section */
-/* Back to Home Link */
-.back-link {
-    text-align: center; /* Center the back-to-home link */
-    margin: 20px; /* Add margin around the link */
-}
-
-.back-link a {
-    font-size: 16px; /* Set font size for the link */
-    color: #000; /* Set link text color */
-    text-decoration: underline; /* Underline the link */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-/* Contact Information Section */
-.contact-info {
-    text-align: center; /* Center the contact information */
-    font-size: 24px; /* Set font size for the text */
-    line-height: 1.8; /* Increase line spacing */
-    margin: 40px auto; /* Add margin around the section */
-    max-width: 800px; /* Limit the maximum width of the section */
-}
-
-.contact-info h2 {
-    font-size: 36px; /* Set font size for the heading */
-    font-weight: bold; /* Make heading bold */
-    margin-bottom: 20px; /* Add space below the heading */
-}
-
-.contact-info p {
-    font-size: 24px; /* Set font size for the text */
-}
-
-.contact-info a {
-    color: #000; /* Set link text color */
-    text-decoration: underline; /* Underline the link */
-}
-/* End of Styles for Contact us page(contact.html) section */
-
-
-/* Start of Styles for Products page(products.html) section */
-/* Products Section */
-main h2 {
-    text-align: center; /* Center the product section heading */
-    font-size: 36px; /* Set font size for the heading */
-    margin: 40px 0; /* Add margin above and below the heading */
-    font-weight: bold; /* Make the heading bold */
-}
-
-/* Product Grid */
+/* Products Page */
 .products-grid {
-    display: grid; /* Use grid layout for products */
-    grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
-    gap: 40px; /* Add space between products */
-    padding: 0 40px; /* Add padding on the sides */
-    justify-items: center; /* Center items within the grid */
-    align-items: start; /* Align items to the top of the grid */
-}
-
-.product-item {
-    text-align: center; /* Center-align product text */
-    font-size: 18px; /* Set font size for product text */
-    color: #333; /* Set product text color */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start; /* Align items to the top */
-    align-items: center; /* Center-align product content */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
 }
 
 .product-item img {
-    width: 150px; /* Set base width for regular product images */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add space below the image */
+    width: 100%;
+    max-width: 150px;
 }
 
-.product-item img.large-image { /* Class to adjust larger images */
-    width: 270px; /* Set width for larger images */
+.product-item img.large-image {
+    max-width: 270px;
 }
 
-.product-item p {
-    font-size: 18px; /* Set font size for product description */
-    margin-top: 10px; /* Add space above the description */
-    color: #000; /* Set description text color */
-    min-height: 40px; /* Set minimum height for product descriptions */
-}
-
-/* Add hover effect to images with the hover-effect class */
-.hover-effect {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-effect:hover {
-    transform: scale(1.05); /* Slightly increase the size of the image */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-}
-/* End of Styles for Products page(products.html) section */
-
-
-/* Start of Styles for Item details page(itemDetails.html) section */
-/* Item Details Section */
+/* Item Details Page */
 .item-details {
-    display: flex; /* Use flexbox layout for item details */
-    justify-content: center; /* Center the content horizontally */
-    align-items: flex-start; /* Align content to the top */
-    padding: 40px 80px; /* Add padding inside the section */
-    gap: 40px; /* Add space between item image and info */
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
 }
 
 .item-image img {
-    float: left; /* Float the image to the left */
-    margin-top: 100px; /* Add space above the image */
-    margin-right: 100px; /* Add space to the right of the image */
-    width: 400px; /* Set fixed width for the image */
+    float: none;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 400px;
 }
 
 .item-info {
-    max-width: 600px; /* Limit the maximum width of the item info */
-    text-align: left; /* Align text to the left */
+    max-width: 100%;
+    text-align: center;
 }
 
-.item-info h1 {
-    font-size: 32px; /* Set font size for the item title */
-    font-weight: bold; /* Make the title bold */
-    margin-bottom: 10px; /* Add space below the title */
-}
-
-.item-info h2 {
-    font-size: 24px; /* Set font size for the subtitle */
-    font-weight: bold; /* Make the subtitle bold */
-    margin-bottom: 20px; /* Add space below the subtitle */
-}
-
-.item-info p {
-    font-size: 16px; /* Set font size for the text */
-    margin-bottom: 20px; /* Add space below the text */
-    line-height: 1.6; /* Set line spacing */
-}
-
-.item-info ul {
-    list-style-type: none; /* Remove default list style */
-    padding: 0; /* Remove default padding */
-}
-
-.item-info ul li {
-    font-size: 16px; /* Set font size for list items */
-    margin-bottom: 10px; /* Add space between list items */
-}
-
-.item-info button {
-    padding: 10px 30px; /* Add padding inside the button */
-    background-color: #000; /* Set button background color */
-    color: #fff; /* Set button text color */
-    border: none; /* Remove default border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 18px; /* Set font size for the button */
-    margin-top: 20px; /* Add space above the button */
-}
-
-.item-info button:hover {
-    background-color: #444; /* Change background color on hover */
-}
-/* end of Styles for Item details page(itemDetails.html) section */
-
-
-/* Start of Styles for Shopping Cart page(cart.html) section */
-/* Shopping Cart Section */
+/* Shopping Cart Page */
 .shopping-cart {
-    display: flex; /* Use flexbox layout for shopping cart */
-    justify-content: space-between; /* Spread out cart items and cost breakdown */
-    padding: 40px; /* Add padding inside the cart section */
-    gap: 60px; /* Add space between cart items and cost breakdown */
-}
-
-.cart-items {
-    flex: 1; /* Allow cart items to take up available space */
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
 }
 
 .cart-item {
-    display: flex; /* Use flexbox layout for cart items */
-    align-items: center; /* Align items vertically in the center */
-    margin-bottom: 30px; /* Add space below each cart item */
-    padding-bottom: 20px; /* Add padding below each cart item */
-    border-bottom: 1px solid #ddd; /* Add border below each cart item */
+    flex-direction: column;
+    text-align: center;
 }
 
 .cart-item img {
-    width: 120px; /* Set fixed width for cart item images */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 40px; /* Add space to the right of the image */
+    margin-right: 0;
+    margin-bottom: 1rem;
 }
 
-.cart-item-info h2 {
-    font-size: 24px; /* Set font size for the cart item title */
-    font-weight: bold; /* Make the cart item title bold */
-}
-
-.cart-item-info p {
-    font-size: 20px; /* Set font size for the cart item price */
-    color: red; /* Set the price color to red */
-    margin-top: 5px; /* Add space above the price */
-}
-
-.delete-icon {
-    margin-left: 50px; /* Add space to the left of the delete icon */
-    width: 50px !important; /* Force the size of the delete icon */
-    height: 50px !important; /* Force the size of the delete icon */
-    cursor: pointer !important; /* Force the cursor to pointer */
-}
-
-/* Cost Breakdown Section */
 .cost-breakdown {
-    border: 1px solid #000; /* Add border around the cost breakdown */
-    padding: 20px; /* Add padding inside the section */
-    max-width: 200px; /* Limit the maximum width */
-    text-align: center; /* Center-align the text */
+    max-width: 100%;
 }
 
-.cost-breakdown p {
-    font-size: 16px; /* Set font size for cost breakdown text */
-    margin: 10px 0; /* Add margin around the text */
+/* Media Queries */
+@media (min-width: 768px) {
+    .brand-description {
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .product-images img {
+        width: 150px;
+    }
+
+    .menu-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-details {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .item-image img {
+        float: left;
+        margin-right: 2rem;
+    }
+
+    .item-info {
+        text-align: left;
+    }
+
+    .shopping-cart {
+        flex-direction: row;
+    }
+
+    .cart-item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .cart-item img {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
 }
 
-.grand-total {
-    font-weight: bold; /* Make the grand total bold */
-    margin-top: 10px; /* Add space above the grand total */
-}
+@media (min-width: 1024px) {
+    .brand-description {
+        padding: 2rem 10%;
+    }
 
-.pay-now-btn {
-    padding: 10px 30px !important; /* Add padding inside the Pay Now button */
-    background-color: #000 !important; /* Set background color */
-    color: #fff !important; /* Set text color */
-    border: none !important; /* Remove default border */
-    cursor: pointer !important; /* Change cursor to pointer on hover */
-    font-size: 18px !important; /* Set font size for the button */
-    margin-top: 20px !important; /* Add space above the button */
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
-
-.pay-now-btn:hover {
-    background-color: #444 !important; /* Change background color on hover */
-}
-/* End of Styles for Shopping Cart page(cart.html) section */
