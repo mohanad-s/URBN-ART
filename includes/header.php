@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo isset($pageTitle) ? "URBN ART - " . $pageTitle : 'URBN ART'; ?></title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
     <script src="../js/validation.js"></script>
 </head>
 <body>
