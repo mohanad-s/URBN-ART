@@ -2,6 +2,13 @@
     "name": "urbn-art/website",
     "description": "URBN ART Website",
     "require": {
-        "php": "^8.0"
-    }
+        "php": "^8.0",
+        "ext-mysqli": "*"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    },
+    "post-install-cmd": [
+        "chmod -R 755 public/"
+    ]
 }
