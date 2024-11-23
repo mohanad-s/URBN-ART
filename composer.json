@@ -1,8 +1,5 @@
 {
-    "name": "urbn-art/website",
-    "type": "project",
     "require": {
-        "php": "^8.0",
-        "ext-mysqli": "*"
+        "php": "^8.0"
     }
 }
