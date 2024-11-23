@@ -1,0 +1,7 @@
+{
+    "name": "urbn-art/website",
+    "description": "URBN ART Website",
+    "require": {
+        "php": "^8.0"
+    }
+}
