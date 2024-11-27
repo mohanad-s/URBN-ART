@@ -9,6 +9,7 @@ Section: Shopping Cart
  on top of the box, if the user doesnt have an account he can click on a hyperlink that directs them into signup page -->
  <?php
 $pageTitle = 'Login';
+include_once '../includes/header.php';
 ?>
  <!DOCTYPE html> <!--Applying Technical Requirement Number 7: DOCTYPE declaration-->
 <html lang="en">
