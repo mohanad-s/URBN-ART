@@ -1,5 +1,22 @@
 /* Start of General Styles: styles that are applied to all pages */
+body {
+    font-family: 'Oswald', Arial, sans-serif; /* Use Oswald font for all text */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    box-sizing: border-box; /* Ensure padding and border are included in total width and height */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange body content vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
 
+main {
+    flex: 1; /* Allow main content to grow and take available space */
+    display: flex; /* Use flexbox layout for main content */
+    flex-direction: column; /* Stack items vertically in main section */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Ensure text is centered */
+}
 
 /* Header Section */
 header {
