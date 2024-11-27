@@ -1,0 +1,40 @@
+/* Print styles - only show table contents */
+@media print {
+    /* Hide everything except the table */
+    body * {
+        visibility: hidden;
+    }
+    
+    .workshop-table,
+    .workshop-table * {
+        visibility: visible;
+    }
+    
+    .workshop-table {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    /* Hide print button when printing */
+    .table-actions {
+        display: none;
+    }
+    
+    /* Ensure table spans full width */
+    .schedule-container {
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Enhance table readability for print */
+    .workshop-table th {
+        background-color: #fff !important;
+        color: #000 !important;
+        border: 1px solid #000 !important;
+    }
+    
+    .workshop-table td {
+        border: 1px solid #000 !important;
+    }
+}
