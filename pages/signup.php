@@ -5,10 +5,13 @@ include_once '../includes/header.php';
 
 <div class="signup-container">
     <div class="signup-box">
-        <div class="signup-logo">
-            <img src="../images/URBN ARTWhite.png" alt="URBN ART Logo">
+        <div class="auth-content">
+            <div class="signup-logo">
+                <img src="../images/URBN ARTWhite.png" alt="URBN ART Logo">
+            </div>
+            <h2>Create Account</h2>
         </div>
-        <h2>Sign Up for URBN ART</h2>
+
         <form>
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
@@ -28,6 +31,4 @@ include_once '../includes/header.php';
     </div>
 </div>
 
-<?php
-include_once '../includes/footer.php';
-?>
+<?php include_once '../includes/footer.php'; ?>
