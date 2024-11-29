@@ -51,7 +51,7 @@ header {
     background-position: center; /* Center the background image */
     z-index: 1; /* Ensure image is behind other header elements */
 }
-/* Header buttons container */
+/* Header Navigation Buttons */
 .header-buttons {
     position: absolute;
     top: 20px;
@@ -62,18 +62,36 @@ header {
     gap: 20px;
 }
 
-/* Services button styles */
-.services-btn {
+.nav-btn {
     margin: 0 10px;
     padding: 10px 20px;
     background-color: #000;
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.services-btn:hover {
+.nav-btn:hover {
     background-color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .menu-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-buttons button {
+        height: 100px;
+        font-size: 20px;
+    }
 }
 
 /*  auth-buttons remove absolute positioning */
@@ -346,48 +364,56 @@ footer {
 
 /* start of Styles for Service page(services.html) section */
 /* Our Services Heading */
-.services-menu h2 {
-    font-size: 36px; /* Set font size for the services heading */
-    margin-bottom: 40px; /* Add space below the heading */
-    font-weight: bold; /* Make the heading bold */
-    color: #000; /* Set text color */
-}
-
-/* Services Page Specific Styles */
+/* Updated Services Menu Styles */
 .services-menu {
-    display: flex; /* Use flexbox layout for services menu */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    height: calc(100vh - 350px); /* Set dynamic height */
+    padding: 40px 20px;
+    min-height: calc(100vh - 250px);
 }
 
 .menu-buttons {
-    display: grid; /* Use grid layout for menu buttons */
-    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
-    gap: 20px; /* Add space between buttons */
-    justify-items: center; /* Center buttons within the grid */
-    margin-top: 20px; /* Add space above the buttons */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Changed to 3 columns */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .menu-buttons button {
-    height: 100px; /* Set button height */
-    width: 400px; /* Set button width */
-    padding: 40px 80px; /* Add padding inside the button */
-    background-color: #000; /* Set background color */
-    color: #fff; /* Set text color */
-    font-size: 24px; /* Set font size */
-    border: none; /* Remove default border */
-    border-radius: 20px; /* Make the button edges rounded */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-weight: bold; /* Make text bold */
+    height: 120px;
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .menu-buttons button:hover {
-    background-color: #444; /* Change background color on hover */
+    background-color: #444;
+    transform: translateY(-5px);
 }
 
-.menu-buttons button:nth-child(4) {
-    text-transform: capitalize; /* Capitalize only the first letter of each word */
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .menu-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-buttons button {
+        height: 100px;
+        font-size: 20px;
+    }
 }
 /* end of Styles for Service page(services.html) section */
 

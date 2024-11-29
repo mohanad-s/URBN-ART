@@ -16,7 +16,8 @@
         </div>
         <div class="header-img"></div>
         <div class="header-buttons">
-            <button onclick="window.location.href='/pages/services.php'" class="services-btn">Services</button>
+            <button onclick="window.location.href='/pages/index.php'" class="nav-btn">Home</button>
+            <button onclick="window.location.href='/pages/services.php'" class="nav-btn">Services</button>
             <div class="auth-buttons">
                 <?php if(isset($_SESSION['user_id'])): ?>
                     <button onclick="window.location.href='/pages/logout.php'">Logout</button>
