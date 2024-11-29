@@ -20,9 +20,9 @@ include_once '../includes/header.php';
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the website is responsive -->
-    <title>Login to URBN ART</title> <!--Applying Technical Requirement Number 3: Setting page title-->
+    <title>Login to URBN ART</title> 
    
-    <link rel="stylesheet" href="CSS\style.css">
+    <link rel="stylesheet" href="..\CSS\style.css">
 </head>
 
 <!-- Body Section begins here -->
@@ -32,7 +32,7 @@ include_once '../includes/header.php';
         <div class="login-box">
             <!-- URBN ART logo for branding purpose -->
             <div class="login-logo">
-                <img src="images\URBN ARTWhite.png" alt="URBN ART Logo">
+                <img src="..\images\URBN ARTWhite.png" alt="URBN ART Logo">
             </div>
             <!-- Main heading of the login form -->
             <h2>Login to URBN ART</h2>

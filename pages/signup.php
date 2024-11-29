@@ -32,7 +32,7 @@ include_once '../includes/header.php';
         <div class="signup-box">
             <!-- URBN ART logo for branding purpose -->
             <div class="signup-logo">
-                <img src="images\URBN ARTWhite.png" alt="URBN ART Logo">
+                <img src="..\images\URBN ARTWhite.png" alt="URBN ART Logo">
             </div>
             <!-- Main heading of the sign-up form -->
             <h2>Sign Up for URBN ART</h2>

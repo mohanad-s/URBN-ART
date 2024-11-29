@@ -18,12 +18,12 @@ include_once '../includes/header.php';
          <!-- Header Section: Logo, background image, and login/signup buttons -->
          <header>
              <div class="header-logo">
-                 <img src="images\URBN ARTBlack.png" alt="URBN ART Logo">
+                 <img src="..\images\URBN ARTBlack.png" alt="URBN ART Logo">
              </div>
              <div class="header-img"></div>
              <div class="auth-buttons">
-                 <button onclick="window.location.href='login.html'">Login</button>
-                 <button onclick="window.location.href='signup.html'">Sign Up</button>
+                 <button onclick="window.location.href='login.php'">Login</button>
+                 <button onclick="window.location.href='signup.php'">Sign Up</button>
              </div>
          </header>
      

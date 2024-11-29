@@ -15,17 +15,6 @@ include_once '../includes/header.php';
      <html lang="en">
      
      <body>
-         <!-- Header Section: Logo, background image, and login/signup buttons -->
-         <header>
-             <div class="header-logo">
-                 <img src="images\URBN ARTBlack.png" alt="URBN ART Logo">
-             </div>
-             <div class="header-img"></div>
-             <div class="auth-buttons">
-                 <button onclick="window.location.href='login.php'">Login</button>
-                 <button onclick="window.location.href='signup.php'">Sign Up</button>
-             </div>
-         </header>
      
          <!-- Shopping Cart Section -->
          <main>
@@ -34,12 +23,12 @@ include_once '../includes/header.php';
                  <!-- Cart Items -->
                  <div class="cart-items">
                      <div class="cart-item">
-                         <img src="images\URBN ART_Bottle1.png" alt="URBN Gold - Chrome">
+                         <img src="..\images\URBN ART_Bottle1.png" alt="URBN Gold - Chrome">
                          <div class="cart-item-info">
                              <h2>URBN Gold - Chrome</h2>
                              <p>45 SAR</p>
                          </div>
-                         <img class="delete-icon" src="images\delete.png" alt="Delete">
+                         <img class="delete-icon" src="..\images\delete.png" alt="Delete">
                      </div>
                      <div class="cart-item">
                          <img src="images\URBN ART_Gloves.png" alt="URBN Nylon Gloves">
@@ -47,7 +36,7 @@ include_once '../includes/header.php';
                              <h2>URBN Nylon Gloves</h2>
                              <p>25 SAR</p>
                          </div>
-                         <img class="delete-icon" src="images\delete.png" alt="Delete">
+                         <img class="delete-icon" src="..\images\delete.png" alt="Delete">
                      </div>
                  </div>
      
