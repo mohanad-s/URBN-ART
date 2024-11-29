@@ -38,13 +38,6 @@ include_once '../includes/header.php';
              </div>
          </main>
      
-         <!-- Footer Section -->
-         <footer>
-             <p>&copy; 2024 URBN ART. All rights reserved.</p>
-             <address>
-                 Contact us at: <a href="mailto:info@urbnart.com">info@urbnart.com</a>
-             </address> <!-- Applying Requirement 12 (address tag) -->
-         </footer>
      </body>
      
      </html>

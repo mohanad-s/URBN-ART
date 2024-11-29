@@ -14,14 +14,6 @@ include_once '../includes/header.php';
      <!DOCTYPE html>
      <html lang="en">
      
-     <head>
-         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>URBN ART - Shopping Cart</title>
-         <link rel="stylesheet" href="../style.css">
-     </head>
-     
      <body>
          <!-- Header Section: Logo, background image, and login/signup buttons -->
          <header>
@@ -71,14 +63,6 @@ include_once '../includes/header.php';
                  </div>
              </section>
          </main>
-     
-         <!-- Footer Section -->
-         <footer>
-             <p>&copy; 2024 URBN ART. All rights reserved.</p> <!-- Applying Requirement 16 -->
-             <address>
-                 Contact us at <a href="mailto:info@urbnart.com">info@urbnart.com</a>
-             </address> <!-- Applying Requirement 12 (address tag) -->
-         </footer>
      </body>
      
      </html>

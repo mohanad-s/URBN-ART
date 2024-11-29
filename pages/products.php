@@ -20,17 +20,6 @@ include_once '../includes/header.php';
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-logo">
-            <img src="images\URBN ARTBlack.png" alt="URBN ART Logo">
-        </div>
-        <div class="header-img"></div>
-        <div class="auth-buttons">
-            <button onclick="window.location.href='login.html'">Login</button>
-            <button onclick="window.location.href='signup.html'">Sign Up</button>
-        </div>
-    </header>
     <!-- Back to Home Link -->
     <div class="back-link">
         <a href="index.html"> >Back to Home </a>
@@ -77,13 +66,6 @@ include_once '../includes/header.php';
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 URBN ART. All rights reserved.</p>
-        <address>
-            contact us at <a href="mailto:info@urbnart.com">info@urbnart.com</a>
-        </address> <!-- Applying Requirement 12 (address tag) -->
-    </footer>
 </body>
 
 </html>

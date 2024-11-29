@@ -22,18 +22,6 @@ include_once '../includes/header.php';
      </head>
      
      <body>
-         <!-- Header Section: Logo, background image, and login/signup buttons -->
-         <header>
-             <div class="header-logo left">
-                 <img src="images\URBN ARTBlack.png" alt="URBN ART Logo">
-             </div>
-             <div class="header-img">
-             <div class="auth-buttons">
-                 <button onclick="window.location.href='login.html'">Login</button>
-                 <button onclick="window.location.href='signup.html'">Sign Up</button>
-             </div>    
-             </div>
-         </header>
      
          <!-- Back to Home Link: A link for users to return to the homepage -->
          <div class="back-link">
@@ -60,15 +48,6 @@ include_once '../includes/header.php';
                  </ul>
              </section>
          </main>
-     
-         <!-- Footer Section -->
-         <footer>
-             <p>&copy; 2024 URBN ART. All rights reserved.</p>
-             <address>
-                 contact us at <a href="mailto:info@urbnart.com">info@urbnart.com</a>
-             </address> <!-- Applying Requirement 12 (address tag) -->
-         </footer>
-     </body>
      
      </html>
 <?php
