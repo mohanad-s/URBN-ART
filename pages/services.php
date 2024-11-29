@@ -24,21 +24,6 @@ include_once '../includes/header.php';
      
      <!-- Applying Technical Requirement Number 8 -->
      <body>
-         <!-- Header Section -->
-         <header>
-             <!-- Centered Logo -->
-             <div class="header-logo">
-                 <img src="images\URBN ARTBlack.png" alt="URBN ART Logo">
-             </div>
-             <!-- Adding a header image (background) -->
-             <div class="header-img"></div>
-             <!-- Adding login and sign-up buttons -->
-             <div class="auth-buttons">
-                 <button onclick="window.location.href='login.html'">Login</button>
-                 <button onclick="window.location.href='signup.html'">Sign Up</button>
-             </div>
-         </header>
-     
          <!-- Services Menu -->
          <main class="services-menu">
              <!-- Our Services Heading -->
