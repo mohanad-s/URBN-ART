@@ -15,13 +15,16 @@
             <img src="/images/URBN ARTBlack.png" alt="URBN ART Logo">
         </div>
         <div class="header-img"></div>
-        <div class="auth-buttons">
-            <?php if(isset($_SESSION['user_id'])): ?>
-                <button onclick="window.location.href='/pages/logout.php'">Logout</button>
-            <?php else: ?>
-                <button onclick="window.location.href='/pages/login.php'">Login</button>
-                <button onclick="window.location.href='/pages/signup.php'">Sign Up</button>
-            <?php endif; ?>
+        <div class="header-buttons">
+            <button onclick="window.location.href='/pages/services.php'" class="services-btn">Services</button>
+            <div class="auth-buttons">
+                <?php if(isset($_SESSION['user_id'])): ?>
+                    <button onclick="window.location.href='/pages/logout.php'">Logout</button>
+                <?php else: ?>
+                    <button onclick="window.location.href='/pages/login.php'">Login</button>
+                    <button onclick="window.location.href='/pages/signup.php'">Sign Up</button>
+                <?php endif; ?>
+            </div>
         </div>
     </header>
     <main>

@@ -51,15 +51,36 @@ header {
     background-position: center; /* Center the background image */
     z-index: 1; /* Ensure image is behind other header elements */
 }
-
-/* Authentication buttons (Login and Sign Up) */
-.auth-buttons {
-    position: absolute; /* Position buttons absolutely in the header */
-    top: 20px; /* Align 20px from the top */
-    right: 20px; /* Align 20px from the right */
-    z-index: 2; /* Keep buttons above the background image */
+/* Header buttons container */
+.header-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
+/* Services button styles */
+.services-btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.services-btn:hover {
+    background-color: #444;
+}
+
+/*  auth-buttons remove absolute positioning */
+.auth-buttons {
+    position: static;
+    display: flex;
+}
 .auth-buttons button {
     margin: 0 10px; /* Add horizontal space between buttons */
     padding: 10px 20px; /* Add padding inside the buttons */
@@ -91,156 +112,124 @@ footer {
     align-items: center;
 }
 
-/* Styling for the login box */
-.login-box {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: center;
-    position: relative;
-}
-
-/* Styling for the logo inside the login box */
-.login-logo {
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: auto;
-}
-
-.login-logo img {
-    width: 100%;
-}
-
-.login-box h2 {
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.login-box label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    color: #000;
-}
-
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.login-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.login-box button:hover {
-    background-color: #444;
-}
-
-.login-box p {
-    margin-top: 20px;
-    color: #000;
-}
-
-.login-box a {
-    color: #000;
-    text-decoration: underline;
-}
-
-
-
-/* Specific signup-container styling */
+/* Login and Signup Container Shared Styles */
+.login-container,
 .signup-container {
-    height: 100vh; /*This is to make sure that the contents fit inside the container */
-    background-image: url('..\\images\\backgr.png'); /* Apply background image to signup-container */
-    background-size: cover; /* Ensure the image covers the entire screen */
-    background-position: center; /* Center the background image */
+    min-height: calc(100vh - 150px); /* Subtract header height */
+    background-image: url('/images/backgr.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 0;
 }
 
-/* Styling for the signup box */
-.signup-box {
+/* Login Box Styles */
+.login-box {
     background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    width: 300px;
-    height: 500px;
+    padding: 60px;
+    border-radius: 12px;
+    width: 500px;
     text-align: center;
     position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the logo inside the signup box */
+/* Signup Box Styles */
+.signup-box {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 12px;
+    width: 500px;
+    min-height: 600px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styles */
+.login-logo,
 .signup-logo {
     position: absolute;
-    top: -80px;
+    top: -100px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120px;
+    width: 160px;
     height: auto;
 }
 
+.login-logo img,
 .signup-logo img {
     width: 100%;
 }
 
+/* Form Styles */
+.login-box h2,
 .signup-box h2 {
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 30px;
     color: #000;
 }
 
+.login-box label,
 .signup-box label {
     display: block;
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: #000;
+    font-size: 18px;
 }
 
+.login-box input,
 .signup-box input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 12px;
+    margin-bottom: 25px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
+.login-box button,
 .signup-box button {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: #000;
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
+.login-box button:hover,
 .signup-box button:hover {
     background-color: #444;
 }
 
+.login-box p,
 .signup-box p {
-    margin-top: 20px;
+    margin-top: 30px;
     color: #000;
+    font-size: 16px;
 }
 
+.login-box a,
 .signup-box a {
     color: #000;
     text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-box,
+    .signup-box {
+        width: 90%;
+        padding: 40px 20px;
+    }
 }
 /* end of General Styles */
 
