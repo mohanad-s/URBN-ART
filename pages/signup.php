@@ -58,7 +58,7 @@ include_once '../includes/header.php';
                 <button type="submit">Sign Up</button>
             </form>
             <!-- Link to the login page for existing users -->
-            <p>Already have an account? <a href="login.html">Login here.</a></p>
+            <p>Already have an account? <a href="login.php">Login here.</a></p>
         </div>
     </div>
 </body>

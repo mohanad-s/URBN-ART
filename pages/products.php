@@ -22,7 +22,7 @@ include_once '../includes/header.php';
 <body>
     <!-- Back to Home Link -->
     <div class="back-link">
-        <a href="index.html"> >Back to Home </a>
+        <a href="../includes/index.php"> >Back to Home </a>
     </div>
     <!-- Products Listing -->
     <main>

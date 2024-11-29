@@ -22,8 +22,8 @@ include_once '../includes/header.php';
              </div>
              <div class="header-img"></div>
              <div class="auth-buttons">
-                 <button onclick="window.location.href='login.html'">Login</button>
-                 <button onclick="window.location.href='signup.html'">Sign Up</button>
+                 <button onclick="window.location.href='login.php'">Login</button>
+                 <button onclick="window.location.href='signup.php'">Sign Up</button>
              </div>
          </header>
      

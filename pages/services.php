@@ -31,10 +31,10 @@ include_once '../includes/header.php';
      
              <!-- Menu Buttons: Navigation to different sections -->
              <div class="menu-buttons">
-                 <button onclick="window.location.href='index.html'"><b>Home</b></button>
-                 <button onclick="window.location.href='products.html'"><b>Products</b></button>
-                 <button onclick="window.location.href='cart.html'"><b>Shopping Cart</b></button>
-                 <button onclick="window.location.href='contact.html'"><b>Contact Us</b></button>
+                 <button onclick="window.location.href='../includes/index.php'"><b>Home</b></button>
+                 <button onclick="window.location.href='products.php'"><b>Products</b></button>
+                 <button onclick="window.location.href='cart.php'"><b>Shopping Cart</b></button>
+                 <button onclick="window.location.href='contact.php'"><b>Contact Us</b></button>
              </div>
          </main>
      

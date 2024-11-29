@@ -25,7 +25,7 @@ include_once '../includes/header.php';
      
          <!-- Back to Home Link: A link for users to return to the homepage -->
          <div class="back-link">
-             <a href="index.html"> >Back to Home </a>
+             <a href="../includes/index.php"> >Back to Home </a>
          </div>
      
          <!-- Contact Information Section -->

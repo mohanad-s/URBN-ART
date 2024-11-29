@@ -29,7 +29,7 @@ include_once '../includes/header.php';
      
          <!-- Back to Products Link -->
          <div class="back-link">
-             <a href="products.html"> >Back to Products </a>
+             <a href="products.php"> >Back to Products </a>
          </div>
      
          <!-- Item Details Section -->

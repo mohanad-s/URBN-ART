@@ -50,7 +50,7 @@ include_once '../includes/header.php';
                 <button type="submit">Login</button>
             </form>
             <!-- Link to the sign-up page for new users -->
-            <p>Don't have an account? <a href="signup.html">Sign up here.</a></p>
+            <p>Don't have an account? <a href="signup.php">Sign up here.</a></p>
         </div>
     </div>
 </body>
