@@ -22,12 +22,12 @@ include_once '../includes/header.php';
         <h3>Professional Resume</h3>
         <div class="pdf-container">
             <object
-                data="/documents/resume.pdf"
+                data="../documents/Mohanad_AlDakheel__Resume.pdf"
                 type="application/pdf"
                 width="100%"
                 height="800px">
                 <p>It appears you don't have a PDF plugin for this browser. 
-                No worries! You can <a href="/documents/resume.pdf">click here to download the PDF file</a>.</p>
+                No worries! You can <a href="../documents/Mohanad_AlDakheel__Resume.pdf">click here to download the PDF file</a>.</p>
             </object>
         </div>
     </div>
