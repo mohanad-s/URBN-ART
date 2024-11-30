@@ -4,6 +4,7 @@ include_once '../includes/header.php';
 include_once '../includes/db_connection.php';
 
 $error = '';
+$redirect = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
@@ -23,10 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Password is correct, create session
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
-            
-            // Redirect to home page
-            header("Location: index.php");
-            exit();
+            $redirect = true;
         } else {
             $error = "Invalid username or password";
         }
@@ -63,5 +61,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>Don't have an account? <a href="signup.php">Sign up here.</a></p>
     </div>
 </div>
+
+<?php if ($redirect): ?>
+<script>
+    window.location.href = '../includes/index.php';
+</script>
+<?php endif; ?>
 
 <?php include_once '../includes/footer.php'; ?>
