@@ -1,10 +1,10 @@
 // Store all gallery images and their titles
 const galleryImages = [
-    { src: '/images/URBN ART_Bottle1.png', title: 'URBN Gold - Chrome' },
-    { src: '/images/URBN ART_Bottle2.png', title: 'URBN Gold - Pink' },
-    { src: '/images/URBN ART_Bottle3.png', title: 'URBN Gold - Purple' },
-    { src: '/images/URBN ART_Bottle4.png', title: 'URBN Gold - Turquoise' },
-    { src: '/images/URBN ARTTip.png', title: 'URBN Skinny Cap' },
+    { src: '../images/gallery5.jpg', title: 'URBN BLACK - AESTHETICS' },
+    { src: '../images/gallery4.jpg', title: 'URBN ART COMMUNITY - ART WORK BY JOHN DOE' },
+    { src: '../images/gallery3', title: 'URBN ART COMMUNITY - ART WORK BY JANE DOE' },
+    { src: '../images/gallery2.webp', title: 'URBN Gold - TESTING' },
+    { src: '../images/gallery1.jpg', title: 'URBN SMILEY - SPECIAL EDITION CAN!' },
     { src: '/images/URBN ART_Gloves.png', title: 'URBN Nylon Gloves' },
     { src: '/images/URBN ART_Ink.png', title: 'URBN Bold Ink' },
     { src: '/images/URBN ART_Bag.png', title: 'URBN Cotton Bag' }

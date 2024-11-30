@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/css/print.css" media="print">
     <script src="../js/validation.js"></script>
+    <script src="../js/gallery.js"></script>
 </head>
 <body>
     <header>

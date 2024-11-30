@@ -15,7 +15,7 @@ include_once '../includes/header.php';
     <!-- Thumbnails container -->
     <div class="thumbnails-container">
         <div class="thumbnail" onclick="changeImage('../images/gallery5.jpg', 'URBN BLACK - AESTHETICS')">
-            <img src="../images/gallery5.jpg" alt="URBN Gold - Chrome">
+            <img src="../images/gallery5.jpg" alt="URBN BLACK - AESTHETICS">
         </div>
         <div class="thumbnail" onclick="changeImage('../images/gallery4.jpg', 'URBN ART COMMUNITY - ART WORK BY JOHN DOE')">
             <img src="../images/gallery4.jpg'" alt="URBN ART COMMUNITY - ART WORK BY JOHN DOE">
