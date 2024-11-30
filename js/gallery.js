@@ -2,7 +2,7 @@
 const galleryImages = [
     { src: '../images/gallery5.jpg', title: 'URBN BLACK - AESTHETICS' },
     { src: '../images/gallery4.jpg', title: 'URBN ART COMMUNITY - ART WORK BY JOHN DOE' },
-    { src: '../images/gallery3', title: 'URBN ART COMMUNITY - ART WORK BY JANE DOE' },
+    { src: '../images/gallery3.jpg', title: 'URBN ART COMMUNITY - ART WORK BY JANE DOE' },
     { src: '../images/gallery2.webp', title: 'URBN Gold - TESTING' },
     { src: '../images/gallery1.jpg', title: 'URBN SMILEY - SPECIAL EDITION CAN!' },
     { src: '/images/URBN ART_Gloves.png', title: 'URBN Nylon Gloves' },
