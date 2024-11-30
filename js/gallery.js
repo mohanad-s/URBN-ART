@@ -1,5 +1,6 @@
 // Store all gallery images and their titles
 const galleryImages = [
+    {src: '../images/gallery6.jpg', title: 'URBN BLACK - POWERCOLOR'},
     { src: '../images/gallery5.jpg', title: 'URBN BLACK - AESTHETICS' },
     { src: '../images/gallery4.jpg', title: 'URBN ART COMMUNITY - ART WORK BY JOHN DOE' },
     { src: '../images/gallery3', title: 'URBN ART COMMUNITY - ART WORK BY JANE DOE' },

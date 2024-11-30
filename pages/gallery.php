@@ -4,11 +4,11 @@ include_once '../includes/header.php';
 ?>
 
 <div class="gallery-container">
-    <h2>URBN ART Product Gallery</h2>
+    <h2>URBN ART Gallery</h2>
 
     <!-- Main display area for large image -->
     <div class="gallery-main">
-        <img id="mainImage" src="../images/gallery6.jpg" alt="URBN Gold - Chrome">
+        <img id="mainImage" src="../images/gallery6.jpg" alt="URBN BLACK - POWERCOLOR">
         <h3 id="imageTitle">URBN BLACK - POWERCOLORS</h3>
     </div>
 
