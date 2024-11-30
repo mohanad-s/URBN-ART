@@ -18,7 +18,7 @@ include_once '../includes/header.php';
             <img src="../images/gallery5.jpg" alt="URBN BLACK - AESTHETICS">
         </div>
         <div class="thumbnail" onclick="changeImage('../images/gallery4.jpg', 'URBN ART COMMUNITY - ART WORK BY JOHN DOE')">
-            <img src="../images/gallery4.jpg'" alt="URBN ART COMMUNITY - ART WORK BY JOHN DOE">
+            <img src="../images/gallery4.jpg" alt="URBN ART COMMUNITY - ART WORK BY JOHN DOE">
         </div>
         <div class="thumbnail" onclick="changeImage('../images/gallery3.jpg', 'URBN ART COMMUNITY - ART WORK BY JANE DOE')">
             <img src="../images/gallery3.jpg" alt="URBN ART COMMUNITY - ART WORK BY JANE DOE">
