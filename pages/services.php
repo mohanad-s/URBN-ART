@@ -15,6 +15,7 @@ include_once '../includes/header.php';
     <button onclick="window.location.href='cart.php'"><b>Shopping Cart</b></button>
     <button onclick="window.location.href='contact.php'"><b>Contact Us</b></button>
     <button onclick="window.location.href='resume.php'"><b>About Owner</b></button>
+    <button onclick="window.location.href='feedback.php'"><b>Give Us Your Feedback!</b></button>
 </div>
 </main>
 

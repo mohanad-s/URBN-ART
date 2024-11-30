@@ -1,6 +1,56 @@
 <?php
 $pageTitle = 'Signup';
 include_once '../includes/header.php';
+include_once '../includes/db_connection.php';
+
+$error = '';
+$success = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username']);
+    $email = trim($_POST['email']);
+    $password = $_POST['password'];
+    $confirmPassword = $_POST['confirm-password'];
+
+    // Validate input
+    if ($password !== $confirmPassword) {
+        $error = "Passwords do not match!";
+    } else {
+        $conn = getDBConnection();
+        
+        // Check if username exists
+        $stmt = $conn->prepare("SELECT id FROM users WHERE username = ?");
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        if ($stmt->get_result()->num_rows > 0) {
+            $error = "Username already exists!";
+        }
+
+        // Check if email exists
+        $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        if ($stmt->get_result()->num_rows > 0) {
+            $error = "Email already registered!";
+        }
+
+        if (empty($error)) {
+            // Hash password
+            $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+            
+            // Insert new user
+            $stmt = $conn->prepare("INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)");
+            $stmt->bind_param("sss", $username, $email, $passwordHash);
+            
+            if ($stmt->execute()) {
+                $success = "Account created successfully! You can now login.";
+            } else {
+                $error = "Error creating account. Please try again.";
+            }
+        }
+        $conn->close();
+    }
+}
 ?>
 
 <div class="signup-container">
@@ -12,7 +62,15 @@ include_once '../includes/header.php';
             <h2>Create Account</h2>
         </div>
 
-        <form>
+        <?php if ($error): ?>
+            <div class="error-message"><?php echo htmlspecialchars($error); ?></div>
+        <?php endif; ?>
+
+        <?php if ($success): ?>
+            <div class="success-message"><?php echo htmlspecialchars($success); ?></div>
+        <?php endif; ?>
+
+        <form method="POST" action="signup.php">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
 
