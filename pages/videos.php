@@ -8,17 +8,17 @@ include_once '../includes/header.php';
     
     <div class="video-grid">
         <div class="video-item">
-            <h3>How to Use URBN Gold Chrome</h3>
+            <h3> URBN ART CONCRETE Effect</h3>
             <div class="video-wrapper">
                 <object 
-                    data="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    data="https://www.youtube.com/embed/V5HjUjf4l5E" 
                     width="560" 
                     height="315">
-                    <param name="movie" value="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <param name="movie" value="https://www.youtube.com/embed/V5HjUjf4l5E">
                     <param name="allowFullScreen" value="true">
                     <param name="allowscriptaccess" value="always">
                     <embed 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        src="https://www.youtube.com/embed/V5HjUjf4l5E" 
                         type="application/x-shockwave-flash" 
                         allowscriptaccess="always" 
                         allowfullscreen="true" 
@@ -26,21 +26,21 @@ include_once '../includes/header.php';
                         height="315">
                 </object>
             </div>
-            <p>Master the chrome effect with our premium spray paint - Step by step tutorial.</p>
+            <p>Master the Concrete effect with our premium spray paint - Step by step tutorial.</p>
         </div>
 
         <div class="video-item">
-            <h3>Graffiti Character Design</h3>
+            <h3>URBN ART DUSTCLEAN Spray</h3>
             <div class="video-wrapper">
                 <object 
-                    data="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    data="https://www.youtube.com/embed/_Yxa0Si02YE" 
                     width="560" 
                     height="315">
-                    <param name="movie" value="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <param name="movie" value="https://www.youtube.com/embed/_Yxa0Si02YE">
                     <param name="allowFullScreen" value="true">
                     <param name="allowscriptaccess" value="always">
                     <embed 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        src="https://www.youtube.com/embed/_Yxa0Si02YE" 
                         type="application/x-shockwave-flash" 
                         allowscriptaccess="always" 
                         allowfullscreen="true" 
@@ -48,21 +48,21 @@ include_once '../includes/header.php';
                         height="315">
                 </object>
             </div>
-            <p>Learn how to create stunning graffiti characters using URBN ART supplies.</p>
+            <p> The highly-pure and dry DUSTCLEAN spray leaves no residues. Do not use on electronic devices.</p>
         </div>
 
         <div class="video-item">
-            <h3>Product Showcase: URBN Gold Series</h3>
+            <h3>HOW TO USE URBN ART RUST Effect</h3>
             <div class="video-wrapper">
                 <object 
-                    data="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    data="https://www.youtube.com/embed/Qp6UX_RUUJE" 
                     width="560" 
                     height="315">
-                    <param name="movie" value="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <param name="movie" value="https://www.youtube.com/embed/Qp6UX_RUUJE">
                     <param name="allowFullScreen" value="true">
                     <param name="allowscriptaccess" value="always">
                     <embed 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        src="https://www.youtube.com/embed/Qp6UX_RUUJE" 
                         type="application/x-shockwave-flash" 
                         allowscriptaccess="always" 
                         allowfullscreen="true" 
@@ -70,7 +70,7 @@ include_once '../includes/header.php';
                         height="315">
                 </object>
             </div>
-            <p>Discover our complete URBN Gold series and their unique features.</p>
+            <p>Master the Rust effect with our premium spray paint - Step by step tutorial.</p>
         </div>
     </div>
 </div>

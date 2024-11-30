@@ -30,7 +30,7 @@ include_once '../includes/header.php';
         <section class="products-grid">
             <div class="product-item">
                 <!-- Wrapping the image inside an anchor tag that points to the item details page -->
-                <a href="itemDetails.html">
+                <a href="itemDetails.php">
                     <img src="..\images\URBN ART_Bottle1.png" alt="URBN Gold- Chrome" class="hover-effect">
                 </a>
                 <p>URBN Gold- Chrome</p>
