@@ -27,12 +27,14 @@ include_once 'header.php';
 </section>
 
 <section class="product-images">
-    <img src="/images/URBN ART_Bag.png" alt="URBN ART Bag">
-    <img src="/images/URBN ART_Bottle1.png" alt="URBN ART Spray 1">
-    <img src="/images/URBN ART_Bottle2.png" alt="URBN ART Spray 2">
+    <h2>Product Images</h2>
+    <img src="/images/URBN%20ART_Bag.png" alt="URBN ART Bag">
+    <img src="/images/URBN%20ART_Bottle1.png" alt="URBN ART Spray 1">
+    <img src="/images/URBN%20ART_Bottle2.png" alt="URBN ART Spray 2">
 </section>
 
 <section class="quote-section">
+    <h2>What Artists Say</h2>
     <blockquote>
         "URBN ART makes graffiti accessible and supports artists by offering high-quality products at reasonable prices."
     </blockquote>
@@ -40,6 +42,7 @@ include_once 'header.php';
 </section>
 
 <section class="services-button">
+    <h2>Discover More</h2>
     <button onclick="window.location.href='/pages/services.php'">Explore Our Services</button>
 </section>
 
