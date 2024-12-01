@@ -27,7 +27,6 @@ include_once 'header.php';
 </section>
 
 <section class="product-images">
-    <h2>Product Images</h2>
     <img src="/images/URBN%20ART_Bag.png" alt="URBN ART Bag">
     <img src="/images/URBN%20ART_Bottle1.png" alt="URBN ART Spray 1">
     <img src="/images/URBN%20ART_Bottle2.png" alt="URBN ART Spray 2">
@@ -42,7 +41,6 @@ include_once 'header.php';
 </section>
 
 <section class="services-button">
-    <h2>Discover More</h2>
     <button onclick="window.location.href='/pages/services.php'">Explore Our Services</button>
 </section>
 

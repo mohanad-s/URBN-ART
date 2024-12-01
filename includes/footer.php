@@ -7,7 +7,7 @@
         <p>
         <a href="https://validator.w3.org/check?uri=referer" target="_blank">
             <img 
-                src="https://www.w3.org/Icons/valid-xhtml10-blue" 
+                src="https://www.w3.org/Icons/valid-xhtml10" 
                 alt="Valid XHTML 1.0" 
                 style="border:0;width:88px;height:31px"
             />
