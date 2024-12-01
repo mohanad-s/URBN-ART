@@ -19,7 +19,7 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
 <body>
     <header>
         <div class="header-logo <?php echo isset($logoClass) ? $logoClass : ''; ?>">
-            <img src="/images/URBN ARTBlack.png" alt="URBN ART Logo">
+            <img src="/images/URBN%20ARTBlack.png" alt="URBN ART Logo">
         </div>
         <div class="header-img"></div>
 
