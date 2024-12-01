@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 include_once __DIR__ . '/db_connection.php';  // Add this line
 ?>
 <!DOCTYPE html>
