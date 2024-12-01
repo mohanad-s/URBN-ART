@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         
         // Add to cart
-        $stmt = $conn->prepare("INSERT INTO cart (user_id, product_id) VALUES (?, ?)");
+        $stmt = $conn->prepare("INSERT INTO cart (user_id, product_id, quantity) VALUES (?, ?, 1)");
         $stmt->bind_param("ii", $user_id, $product_id);
         $stmt->execute();
         

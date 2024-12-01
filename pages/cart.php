@@ -103,5 +103,29 @@ function proceedToCheckout() {
     alert('Checkout functionality coming soon!');
 }
 </script>
-
+<script>
+function addToCart(productId) {
+    fetch('add_to_cart.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: 'product_id=' + productId
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Item added to cart successfully!');
+            // Refresh the page to update stock display
+            location.reload();
+        } else {
+            alert(data.error || 'Error adding item to cart');
+        }
+    })
+    .catch(error => {
+        alert('Error adding item to cart');
+        console.error('Error:', error);
+    });
+}
+</script>
 <?php include_once '../includes/footer.php'; ?>
