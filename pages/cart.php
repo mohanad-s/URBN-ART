@@ -1,13 +1,13 @@
 <?php
-$pageTitle = 'Shopping Cart';
-include_once '../includes/header.php';
-include_once '../includes/db_connection.php';
-
-// Redirect to login if not logged in
+session_start();
+// Check login before any output
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
 }
+$pageTitle = 'Shopping Cart';
+include_once '../includes/header.php';
+include_once '../includes/db_connection.php';
 
 // Get cart items
 $conn = getDBConnection();

@@ -11,7 +11,7 @@ $result = $stmt->get_result();
 ?>
 
 <div class="back-link">
-    <a href="/pages/index.php">Back to Home</a>
+    <a href="../includes/index.php">Back to Home</a>
 </div>
 
 <main>
