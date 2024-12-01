@@ -1,5 +1,4 @@
 <?php
-session_start();
 // Check login before any output
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");

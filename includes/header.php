@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once __DIR__ . '/db_connection.php';  // Add this line
 ?>
 <!DOCTYPE html>
