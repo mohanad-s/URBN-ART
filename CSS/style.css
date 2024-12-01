@@ -1150,3 +1150,24 @@ legend {
     margin: 40px 0;
     color: #666;
 }
+/* --- Styling for Resume Viewer --- */
+.resume-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.resume-viewer {
+    margin-top: 20px;
+}
+
+.pdf-container {
+    width: 100%;
+    height: 800px; /* Adjust as needed */
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none; /* Optional: Removes default border */
+}
