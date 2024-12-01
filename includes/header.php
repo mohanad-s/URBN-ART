@@ -19,6 +19,31 @@ session_start();
             <img src="/images/URBN ARTBlack.png" alt="URBN ART Logo">
         </div>
         <div class="header-img"></div>
+
+         <!-- Welcome message and cart icon -->
+    <div class="user-section">
+        <?php if(isset($_SESSION['user_id'])): ?>
+            <span class="welcome-message">Welcome back, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
+            <a href="/pages/view_cart.php" class="cart-icon">
+                <div class="cart-wrapper">
+                    🛒
+                    <?php
+                    // Get cart count
+                    $conn = getDBConnection();
+                    $stmt = $conn->prepare("SELECT COUNT(*) as count FROM cart WHERE user_id = ?");
+                    $stmt->bind_param("i", $_SESSION['user_id']);
+                    $stmt->execute();
+                    $result = $stmt->get_result();
+                    $count = $result->fetch_assoc()['count'];
+                    if($count > 0):
+                    ?>
+                        <span class="cart-count"><?php echo $count; ?></span>
+                    <?php endif; ?>
+                </div>
+            </a>
+        <?php endif; ?>
+    </div>
+    
         <div class="header-buttons">
             <button onclick="window.location.href='../includes/index.php'" class="nav-btn">Home</button>
             <button onclick="window.location.href='/pages/services.php'" class="nav-btn">Services</button>
