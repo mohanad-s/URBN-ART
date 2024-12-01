@@ -30,13 +30,13 @@ include_once '../includes/header.php';
             <img src="../images/gallery1.jpg" alt="URBN SMILEY - SPECIAL EDITION CAN!">
         </div>
         <div class="thumbnail" onclick="changeImage('/images/URBN ART_Gloves.png', 'URBN Nylon Gloves')">
-            <img src="../images/URBN ART_Gloves.png" alt="URBN Nylon Gloves">
+            <img src="../images/URBN%20ART_Gloves.png" alt="URBN Nylon Gloves">
         </div>
         <div class="thumbnail" onclick="changeImage('/images/URBN ART_Ink.png', 'URBN Bold Ink')">
-            <img src="../images/URBN ART_Ink.png" alt="URBN Bold Ink">
+            <img src="../images/URBN%20ART_Ink.png" alt="URBN Bold Ink">
         </div>
         <div class="thumbnail" onclick="changeImage('/images/URBN ART_Bag.png', 'URBN Cotton Bag')">
-            <img src="../images/URBN ART_Bag.png" alt="URBN Cotton Bag">
+            <img src="../images/URBN%20ART_Bag.png" alt="URBN Cotton Bag">
         </div>
     </div>
 
