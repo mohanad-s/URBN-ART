@@ -26,11 +26,11 @@ include_once 'header.php';
     </ul>
 </section>
 
-<section class="product-images">
+<div class="product-images">
     <img src="/images/URBN%20ART_Bag.png" alt="URBN ART Bag">
     <img src="/images/URBN%20ART_Bottle1.png" alt="URBN ART Spray 1">
     <img src="/images/URBN%20ART_Bottle2.png" alt="URBN ART Spray 2">
-</section>
+</div>
 
 <section class="quote-section">
     <h2>What Artists Say</h2>
@@ -40,9 +40,9 @@ include_once 'header.php';
     <cite>- Ahmed Jan - Local Graffiti Artist</cite>
 </section>
 
-<section class="services-button">
+<div class="services-button">
     <button onclick="window.location.href='/pages/services.php'">Explore Our Services</button>
-</section>
+</div>
 
 <?php
 include_once '../includes/footer.php';
