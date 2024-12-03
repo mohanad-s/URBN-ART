@@ -461,7 +461,7 @@ footer {
 
 /* Start of Styles for Products page(products.html) section */
 /* Products Section */
-main h2 {
+.main h2 {
     text-align: center; /* Center the product section heading */
     font-size: 36px; /* Set font size for the heading */
     margin: 40px 0; /* Add margin above and below the heading */
