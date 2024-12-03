@@ -47,7 +47,7 @@ include_once __DIR__ . '/db_connection.php';
         </div>
 
         <div class="header-buttons">
-            <button type="button" onclick="window.location.href='/pages/index.php'" class="nav-btn">Home</button>
+            <button type="button" onclick="window.location.href='/includes/index.php'" class="nav-btn">Home</button>
             <button type="button" onclick="window.location.href='/pages/services.php'" class="nav-btn">Services</button>
             <div class="auth-buttons">
                 <?php if(isset($_SESSION['user_id'])): ?>

@@ -35,7 +35,7 @@ include_once 'header.php';
 <div class="quote-section">
     <h2>What Artists Say</h2>
     <blockquote>
-        "URBN ART makes graffiti accessible and supports artists by offering high-quality products at reasonable prices."
+        <p>"URBN ART makes graffiti accessible and supports artists by offering high-quality products at reasonable prices."</p>
     </blockquote>
     <cite>- Ahmed Jan - Local Graffiti Artist</cite>
 </div>
