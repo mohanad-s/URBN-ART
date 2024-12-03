@@ -19,6 +19,7 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
     <script type="text/javascript" src="../js/gallery.js"></script>
 </head>
 <body>
+<div class="main-content">
 <div class="header">
         <div class="header-logo <?php echo isset($logoClass) ? $logoClass : ''; ?>">
         <img src="/images/URBN%20ARTBlack.png" alt="URBN ART Logo" />
@@ -61,4 +62,6 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
                 <?php endif; ?>
             </div>
         </div>
+    </div>
 </div>
+</body>
