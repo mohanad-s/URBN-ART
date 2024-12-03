@@ -114,7 +114,7 @@ body {
     }
 }
 /* Footer */
-footer {
+.footer {
     background-color: #f8f8f8; /* Set light background color for footer */
     padding: 20px 0; /* Add padding at top and bottom */
     text-align: center; /* Center-align the text in the footer */
