@@ -21,10 +21,10 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
 <body>
 <div class="header">
         <div class="header-logo <?php echo isset($logoClass) ? $logoClass : ''; ?>">
-            <img src="/images/URBN%20ARTBlack.png" alt="URBN ART Logo">
+        <img src="/images/URBN%20ARTBlack.png" alt="URBN ART Logo" />
         </div>
         <div class="header-img"></div>
-</div>
+
          <!-- Welcome message and cart icon -->
     <div class="user-section">
         <?php if(isset($_SESSION['user_id'])): ?>
@@ -61,5 +61,4 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
                 <?php endif; ?>
             </div>
         </div>
-    </header>
-    <main>
+</div>
