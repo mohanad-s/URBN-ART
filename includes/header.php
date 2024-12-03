@@ -15,16 +15,16 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
     <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
     <link rel="stylesheet" type="text/css" href="/CSS/print.css" media="print" />
 
-    <script src="../js/validation.js"></script>
-    <script src="../js/gallery.js"></script>
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <script type="text/javascript" src="../js/gallery.js"></script>
 </head>
 <body>
-    <header>
+<div class="header">
         <div class="header-logo <?php echo isset($logoClass) ? $logoClass : ''; ?>">
             <img src="/images/URBN%20ARTBlack.png" alt="URBN ART Logo">
         </div>
         <div class="header-img"></div>
-
+</div>
          <!-- Welcome message and cart icon -->
     <div class="user-section">
         <?php if(isset($_SESSION['user_id'])): ?>
