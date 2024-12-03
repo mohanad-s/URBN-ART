@@ -9,7 +9,7 @@ body {
     min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
-.main-content {
+main {
     flex: 1; /* Allow main content to grow and take available space */
     display: flex; /* Use flexbox layout for main content */
     flex-direction: column; /* Stack items vertically in main section */
@@ -19,7 +19,7 @@ body {
 }
 
 /* Header Section */
-.header {
+header {
     position: relative; /* Allows positioning child elements absolutely */
     width: 101%; /* Set header width slightly larger than full width */
     height: 150px; /* Set fixed height for the header */

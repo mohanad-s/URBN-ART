@@ -18,9 +18,9 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
     <script src="../js/gallery.js"></script>
 </head>
 <body>
-<div class="header">
-        <div class="header-logo <?php echo isset($logoClass) ? htmlspecialchars($logoClass) : ''; ?>">
-            <img src="/images/URBN%20ARTBlack.png" alt="URBN ART Logo" />
+    <header>
+        <div class="header-logo <?php echo isset($logoClass) ? $logoClass : ''; ?>">
+            <img src="/images/URBN%20ARTBlack.png" alt="URBN ART Logo">
         </div>
         <div class="header-img"></div>
 
@@ -61,4 +61,4 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
             </div>
         </div>
     </header>
-    <div class="main-content">
+    <main>
