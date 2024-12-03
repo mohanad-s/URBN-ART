@@ -35,7 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $conn->close();
 }
 ?>
-
+<body>
+<div class="main">
 <div class="login-container">
     <div class="login-box">
         <div class="auth-content">
@@ -61,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>Don't have an account? <a href="signup.php">Sign up here.</a></p>
     </div>
 </div>
-
+</div>
 <?php if ($redirect): ?>
 <script>
     window.location.href = '../includes/index.php';
@@ -69,3 +70,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php endif; ?>
 
 <?php include_once '../includes/footer.php'; ?>
+</body>

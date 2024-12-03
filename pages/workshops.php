@@ -2,7 +2,8 @@
 $pageTitle = 'Workshop Schedule';
 include_once '../includes/header.php';
 ?>
-
+<body>
+<div class="main">
 <div class="schedule-container">
     <h2>URBN ART Workshop Schedule</h2>
     
@@ -67,5 +68,6 @@ include_once '../includes/header.php';
         <button onclick="window.print()" class="print-button">Print Schedule</button>
     </div>
 </div>
-
+</div>
 <?php include_once '../includes/footer.php'; ?>
+</body>

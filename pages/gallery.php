@@ -2,7 +2,8 @@
 $pageTitle = 'Gallery';
 include_once '../includes/header.php';
 ?>
-
+<body>
+<div class="main">
 <div class="gallery-container">
     <h2>URBN ART Gallery</h2>
 
@@ -46,5 +47,6 @@ include_once '../includes/header.php';
         <button onclick="nextImage()" class="nav-button">Next</button>
     </div>
 </div>
-
+</div>
 <?php include_once '../includes/footer.php'; ?>
+</body>

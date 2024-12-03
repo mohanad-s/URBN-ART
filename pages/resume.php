@@ -2,6 +2,8 @@
 $pageTitle = 'Owner Resume';
 include_once '../includes/header.php';
 ?>
+<body>
+<div class="main">
 
 <div class="resume-container">
     <div class="resume-header">
@@ -31,5 +33,7 @@ include_once '../includes/header.php';
         </div>
     </div>
 </div>
-
+</div>
 <?php include_once '../includes/footer.php'; ?>
+</body>
+

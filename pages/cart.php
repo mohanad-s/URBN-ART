@@ -32,9 +32,10 @@ $vat = $subtotal * 0.15; // 15% VAT
 $delivery = 15; // Fixed delivery charge
 $grand_total = $subtotal + $vat + $delivery;
 ?>
-
+<body>
+<div class = "main">
 <h1>Shopping Cart</h1>
-<section class="shopping-cart">
+<div class="shopping-cart">
     <!-- Cart Items -->
     <div class="cart-items">
         <?php if (empty($cart_items)): ?>
@@ -69,8 +70,8 @@ $grand_total = $subtotal + $vat + $delivery;
             <button class="pay-now-btn" onclick="proceedToCheckout()">Pay Now</button>
         </div>
     <?php endif; ?>
-</section>
-
+    </div>
+    </div>
 <script>
 function removeFromCart(cartId) {
     if (confirm('Are you sure you want to remove this item?')) {
@@ -129,3 +130,4 @@ function addToCart(productId) {
 }
 </script>
 <?php include_once '../includes/footer.php'; ?>
+</body>

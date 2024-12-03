@@ -11,7 +11,8 @@ if (isset($_SESSION['feedback_error'])) {
     unset($_SESSION['feedback_error']); // Clear the error message
 }
 ?>
-
+<body>
+<div class="main">
 <div class="feedback-container">
     <h2>Share Your Experience with URBN ART</h2>
     
@@ -100,5 +101,6 @@ if (isset($_SESSION['feedback_error'])) {
         <button type="submit">Submit Feedback</button>
     </form>
 </div>
-
+</div>
 <?php include_once '../includes/footer.php'; ?>
+</body>

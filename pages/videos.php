@@ -2,7 +2,8 @@
 $pageTitle = 'Video Tutorials';
 include_once '../includes/header.php';
 ?>
-
+<body>
+<div class="main">
 <div class="video-container">
     <h2>URBN ART Video Tutorials</h2>
     
@@ -74,5 +75,6 @@ include_once '../includes/header.php';
         </div>
     </div>
 </div>
-
+</div>
 <?php include_once '../includes/footer.php'; ?>
+</body>

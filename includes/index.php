@@ -3,7 +3,8 @@ $pageTitle = 'Home';
 $logoClass = 'centered';
 include_once 'header.php';
 ?>
-
+<body>
+<div class ="main">
 <!-- Brand Description --> 
 <div class="brand-description">
     <h2>About URBN ART</h2>
@@ -43,7 +44,9 @@ include_once 'header.php';
 <div class="services-button">
     <button onclick="window.location.href='/pages/services.php'">Explore Our Services</button>
 </div>
+</div>
 
 <?php
 include_once '../includes/footer.php';
 ?>
+</body>

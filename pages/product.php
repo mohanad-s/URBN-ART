@@ -20,12 +20,13 @@ if (!$product) {
     exit();
 }
 ?>
-
+<body>
+<div class="main">
 <div class="back-link">
     <a href="/pages/products.php">Back to Products</a>
 </div>
 
-<section class="item-details">
+<div class="item-details">
     <!-- Product Image -->
     <div class="item-image">
         <img src="<?php echo htmlspecialchars($product['image_path']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
@@ -51,7 +52,7 @@ if (!$product) {
     <button disabled>Out of Stock</button>
 <?php endif; ?>
     </div>
-
+</div>
     <script>
 function addToCart(productId) {
     console.log('Adding product ID:', productId); // Debug line
@@ -82,6 +83,7 @@ function addToCart(productId) {
     });
 }
 </script>
-</section>
+</div>
 
 <?php include_once '../includes/footer.php'; ?>
+</body>

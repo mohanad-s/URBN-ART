@@ -2,8 +2,9 @@
 $pageTitle = 'Services';
 include_once '../includes/header.php';
 ?>
-
-<section class="services-menu">
+<body>
+<div class="main">
+<div class="services-menu">
     <h2>Our Services</h2>
 
     <div class="menu-buttons">
@@ -17,8 +18,10 @@ include_once '../includes/header.php';
         <button onclick="window.location.href='resume.php'"><b>About Owner</b></button>
         <button onclick="window.location.href='feedback.php'"><b>Give Us Your Feedback!</b></button>
     </div>
-</section>
-
+</div>
+</div>
 <?php
 include_once '../includes/footer.php';
 ?>
+</body>
+

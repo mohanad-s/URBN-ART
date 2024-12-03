@@ -1,4 +1,3 @@
-</div> <!-- end main -->
     <div class="footer">
         <p>&copy; <?php echo date('Y'); ?> URBN ART. All rights reserved.</p>
         <address>
@@ -21,5 +20,3 @@
             </a>
         </p>
     </div>
-</body>
-</html>
