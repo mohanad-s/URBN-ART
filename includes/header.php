@@ -4,12 +4,13 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 include_once __DIR__ . '/db_connection.php';  // Add this line
 ?>
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title><?php echo isset($pageTitle) ? "URBN ART - " . $pageTitle : 'URBN ART'; ?></title>
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/print.css" media="print">
@@ -17,9 +18,9 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
     <script src="../js/gallery.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-logo <?php echo isset($logoClass) ? $logoClass : ''; ?>">
-            <img src="/images/URBN%20ARTBlack.png" alt="URBN ART Logo">
+<div class="header">
+        <div class="header-logo <?php echo isset($logoClass) ? htmlspecialchars($logoClass) : ''; ?>">
+            <img src="/images/URBN%20ARTBlack.png" alt="URBN ART Logo" />
         </div>
         <div class="header-img"></div>
 
@@ -60,4 +61,4 @@ include_once __DIR__ . '/db_connection.php';  // Add this line
             </div>
         </div>
     </header>
-    <main>
+    <div class="main-content">
