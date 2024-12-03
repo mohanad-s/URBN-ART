@@ -9,15 +9,14 @@ $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();
 $result = $stmt->get_result();
 ?>
-<body>
-<div class="main">
+
 <div class="back-link">
     <a href="../includes/index.php">Back to Home</a>
 </div>
 
-
+<main>
     <h2>Products</h2>
-    <div class="products-grid">
+    <section class="products-grid">
         <?php while ($product = $result->fetch_assoc()): ?>
             <div class="product-item">
                 <a href="product.php?id=<?php echo $product['id']; ?>">
@@ -29,10 +28,10 @@ $result = $stmt->get_result();
                 <p class="price"><?php echo number_format($product['price'], 2); ?> SAR</p>
             </div>
         <?php endwhile; ?>
-        </div>
-</div>
+    </section>
+</main>
+
 <?php 
 $conn->close();
 include_once '../includes/footer.php'; 
 ?>
-</body>

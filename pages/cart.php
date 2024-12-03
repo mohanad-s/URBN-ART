@@ -32,23 +32,9 @@ $vat = $subtotal * 0.15; // 15% VAT
 $delivery = 15; // Fixed delivery charge
 $grand_total = $subtotal + $vat + $delivery;
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&amp;display=swap" rel="stylesheet" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><?php echo isset($pageTitle) ? "URBN ART - " . $pageTitle : 'URBN ART'; ?></title>
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
-    <link rel="stylesheet" type="text/css" href="/CSS/print.css" media="print" />
-    <script type="text/javascript" src="../js/validation.js"></script>
-    <script type="text/javascript" src="../js/gallery.js"></script>
-</head>
-<body>
-<div class = "main">
+
 <h1>Shopping Cart</h1>
-<div class="shopping-cart">
+<section class="shopping-cart">
     <!-- Cart Items -->
     <div class="cart-items">
         <?php if (empty($cart_items)): ?>
@@ -83,8 +69,8 @@ $grand_total = $subtotal + $vat + $delivery;
             <button class="pay-now-btn" onclick="proceedToCheckout()">Pay Now</button>
         </div>
     <?php endif; ?>
-    </div>
-    </div>
+</section>
+
 <script>
 function removeFromCart(cartId) {
     if (confirm('Are you sure you want to remove this item?')) {
@@ -143,5 +129,3 @@ function addToCart(productId) {
 }
 </script>
 <?php include_once '../includes/footer.php'; ?>
-</body>
-</html>

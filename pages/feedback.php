@@ -11,21 +11,7 @@ if (isset($_SESSION['feedback_error'])) {
     unset($_SESSION['feedback_error']); // Clear the error message
 }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&amp;display=swap" rel="stylesheet" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><?php echo isset($pageTitle) ? "URBN ART - " . $pageTitle : 'URBN ART'; ?></title>
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
-    <link rel="stylesheet" type="text/css" href="/CSS/print.css" media="print" />
-    <script type="text/javascript" src="../js/validation.js"></script>
-    <script type="text/javascript" src="../js/gallery.js"></script>
-</head>
-<body>
-<div class="main">
+
 <div class="feedback-container">
     <h2>Share Your Experience with URBN ART</h2>
     
@@ -114,7 +100,5 @@ if (isset($_SESSION['feedback_error'])) {
         <button type="submit">Submit Feedback</button>
     </form>
 </div>
-</div>
+
 <?php include_once '../includes/footer.php'; ?>
-</body>
-</html>

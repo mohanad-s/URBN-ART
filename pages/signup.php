@@ -1,7 +1,6 @@
 <?php
 $pageTitle = 'Signup';
 include_once '../includes/header.php';
-
 include_once '../includes/db_connection.php';
 
 $error = '';
@@ -53,8 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-<body>
-<div class="main">
+
 <div class="signup-container">
     <div class="signup-box">
         <div class="auth-content">
@@ -90,7 +88,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>Already have an account? <a href="login.php">Login here.</a></p>
     </div>
 </div>
-</div>
 
 <?php include_once '../includes/footer.php'; ?>
-        </body>
