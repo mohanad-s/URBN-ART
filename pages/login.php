@@ -71,11 +71,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endif; ?>
 
         <form method="post" action="login.php">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required/>
+            <p><label for="username">Username</label></p>
+            <input type="text" id="username" name="username" required="required"/>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required/>
+            <p><label for="password">Password</label></p>
+            <input type="password" id="password" name="password" required="required"/>
 
             <button type="submit">Login</button>
         </form>
