@@ -4,19 +4,13 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 include_once __DIR__ . '/../includes/db_connection.php';
+include_once '../includes/db_connection.php';
 
 // Get all products from database
 $conn = getDBConnection();
 $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();
-$products_result = $stmt->get_result();
-
-// Add these debug lines
-if (!$products_result) {
-    die("Query failed: " . $conn->error);
-}
-echo "Number of products: " . $$products_result->num_rows; // This will tell us if we're getting products
-
+$result = $stmt->get_result();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -43,12 +37,7 @@ echo "Number of products: " . $$products_result->num_rows; // This will tell us 
 
     <h2>Products</h2>
     <section class="products-grid">
-        
-        <?php
-         echo "Before loop"; // Debug line
-         while ($product = $products_result->fetch_assoc()):
-        echo "Processing product: " . $product['name']; // Debug line
-        ?>
+        <?php while ($product = $result->fetch_assoc()): ?>
             <div class="product-item">
                 <a href="product.php?id=<?php echo $product['id']; ?>">
                     <img src="<?php echo htmlspecialchars($product['image_path']); ?>" 
