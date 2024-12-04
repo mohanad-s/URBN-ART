@@ -11,6 +11,13 @@ $conn = getDBConnection();
 $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();
 $result = $stmt->get_result();
+
+// Add these debug lines
+if (!$result) {
+    die("Query failed: " . $conn->error);
+}
+echo "Number of products: " . $result->num_rows; // This will tell us if we're getting products
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -37,7 +44,12 @@ $result = $stmt->get_result();
 
     <h2>Products</h2>
     <section class="products-grid">
-        <?php while ($product = $result->fetch_assoc()): ?>
+        
+        <?php
+         echo "Before loop"; // Debug line
+        while ($product = $result->fetch_assoc()):
+        echo "Processing product: " . $product['name']; // Debug line
+        ?>
             <div class="product-item">
                 <a href="product.php?id=<?php echo $product['id']; ?>">
                     <img src="<?php echo htmlspecialchars($product['image_path']); ?>" 
