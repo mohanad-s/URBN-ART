@@ -11,17 +11,6 @@ $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();
 $result = $stmt->get_result();
 
-// Debugging addition
-if ($result->num_rows === 0) {
-    echo "No products found in the database.";
-}
-
-// Optional: Force-fetch first row to verify
-$firstProduct = $result->fetch_assoc();
-if ($firstProduct) {
-    // Reset the result pointer
-    $result->data_seek(0);
-}
 
 ?>
 
@@ -51,6 +40,18 @@ if ($firstProduct) {
 
     <h2>Products</h2>
     <div class="products-grid">
+        <?php 
+        if ($result->num_rows === 0) {
+    echo "No products found in the database.";
+}
+
+// Optional: Force-fetch first row to verify
+$firstProduct = $result->fetch_assoc();
+if ($firstProduct) {
+    // Reset the result pointer
+    $result->data_seek(0);
+}
+?>
         <?php while ($product = $result->fetch_assoc()): ?>
             <div class="product-item">
                 <a href="product.php?id=<?php echo $product['id']; ?>">
