@@ -46,7 +46,7 @@ if (!$product) {
 <div class="item-details">
     <!-- Product Image -->
     <div class="item-image">
-        <img src="<?php echo htmlspecialchars($product['image_path']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
+        <img src="<?php echo htmlspecialchars($product['image_path']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>"/>
     </div>
 
     <!-- Product Information -->
