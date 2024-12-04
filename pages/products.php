@@ -41,15 +41,20 @@ $result = $stmt->get_result();
     <h2>Products</h2>
     <div class="products-grid">
         <?php 
-        if ($result->num_rows === 0) {
-    echo "No products found in the database.";
-}
+       // Print out query details
+$query = "SELECT * FROM products ORDER BY id";
+echo "Executing query: " . $query . "<br>";
 
-// Optional: Force-fetch first row to verify
-$firstProduct = $result->fetch_assoc();
-if ($firstProduct) {
-    // Reset the result pointer
-    $result->data_seek(0);
+// Print number of rows
+echo "Number of rows: " . $result->num_rows . "<br>";
+
+// Print all results
+echo "Result contents:<br>";
+$result->data_seek(0);  // Reset pointer to start of results
+while ($row = $result->fetch_assoc()) {
+    echo "<pre>";
+    print_r($row);
+    echo "</pre>";
 }
 ?>
         <?php while ($product = $result->fetch_assoc()): ?>
