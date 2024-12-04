@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'Product Details';
-include_once '../includes/header.php';
 include_once '../includes/db_connection.php';
 
 // Get the product ID from URL
@@ -20,12 +19,28 @@ if (!$product) {
     exit();
 }
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><?php echo isset($pageTitle) ? "URBN ART - " . $pageTitle : 'URBN ART'; ?></title>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="/CSS/print.css" media="print" />
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <script type="text/javascript" src="../js/gallery.js"></script>
+</head>
 
+<body>
+<?php include_once '../includes/header.php'; ?>
+<div class="main">
 <div class="back-link">
     <a href="/pages/products.php">Back to Products</a>
 </div>
 
-<section class="item-details">
+<div class="item-details">
     <!-- Product Image -->
     <div class="item-image">
         <img src="<?php echo htmlspecialchars($product['image_path']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
@@ -51,7 +66,6 @@ if (!$product) {
     <button disabled>Out of Stock</button>
 <?php endif; ?>
     </div>
-
     <script>
 function addToCart(productId) {
     console.log('Adding product ID:', productId); // Debug line
@@ -82,6 +96,9 @@ function addToCart(productId) {
     });
 }
 </script>
-</section>
+</div>
 
+</div>
 <?php include_once '../includes/footer.php'; ?>
+</body>
+</html>
