@@ -46,42 +46,42 @@ if (isset($_SESSION['feedback_error'])) {
             <legend>Personal Information</legend>
             
             <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required/>
+            <label for="name">Full Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" class="required" />
             </div>
 
             <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required/>
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="text" id="email" name="email" class="required" />
             </div>
 
             <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" required/>
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="text" id="phone" name="phone" class="required" />
             </div>
 
             <div class="form-group">
-                <label for="city">City *</label>
-                <input type="text" id="city" name="city" required/>
+            <label for="city">City <span class="required">*</span></label>
+            <input type="text" id="city" name="city" class="required" />
             </div>
 
             <div class="form-group">
-                <label>Are you an artist? *</label>
+            <label>Are you an artist? <span class="required">*</span></label>
                 <div class="radio-group">
-                    <input type="radio" id="artist_yes" name="is_artist" value="yes" required/>
-                    <label for="artist_yes">Yes</label>
-                    <input type="radio" id="artist_no" name="is_artist" value="no"/>
-                    <label for="artist_no">No</label>
+                <input type="radio" id="artist_yes" name="is_artist" value="yes" class="required" />
+                <label for="artist_yes">Yes</label>
+                <input type="radio" id="artist_no" name="is_artist" value="no" />
+                <label for="artist_no">No</label>
                 </div>
             </div>
 
             <div class="form-group">
-                <label>Type of Art *</label>
+            <label>Type of Art <span class="required">*</span></label>
                 <div class="radio-group">
-                    <input type="radio" id="art_graffiti" name="art_type" value="graffiti" required/>
-                    <label for="art_graffiti">Graffiti</label>
-                    <input type="radio" id="art_other" name="art_type" value="other"/>
-                    <label for="art_other">Other</label>
+                <input type="radio" id="art_graffiti" name="art_type" value="graffiti" class="required" />
+                <label for="art_graffiti">Graffiti</label>
+                <input type="radio" id="art_other" name="art_type" value="other" />
+                <label for="art_other">Other</label>
                 </div>
             </div>
         </fieldset>
@@ -102,8 +102,8 @@ if (isset($_SESSION['feedback_error'])) {
             </div>
 
             <div class="form-group">
-                <label for="purchase_frequency">How often do you purchase art supplies? *</label>
-                <select id="purchase_frequency" name="purchase_frequency" required>
+            <label for="purchase_frequency">How often do you purchase art supplies? <span class="required">*</span></label>
+            <select id="purchase_frequency" name="purchase_frequency" class="required">
                     <option value="">Please select</option>
                     <option value="weekly">Weekly</option>
                     <option value="monthly">Monthly</option>
@@ -113,12 +113,12 @@ if (isset($_SESSION['feedback_error'])) {
             </div>
 
             <div class="form-group">
-                <label for="feedback">Your Feedback *</label>
-                <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            <label for="feedback">Your Feedback <span class="required">*</span></label>
+            <textarea id="feedback" name="feedback" rows="5" class="required"></textarea>
             </div>
         </fieldset>
 
-        <button type="submit">Submit Feedback</button>
+        <input type="submit" value="Submit Feedback" />
     </form>
 </div>
 
