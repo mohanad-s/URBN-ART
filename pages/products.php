@@ -10,6 +10,19 @@ $conn = getDBConnection();
 $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();
 $result = $stmt->get_result();
+
+// Debugging addition
+if ($result->num_rows === 0) {
+    echo "No products found in the database.";
+}
+
+// Optional: Force-fetch first row to verify
+$firstProduct = $result->fetch_assoc();
+if ($firstProduct) {
+    // Reset the result pointer
+    $result->data_seek(0);
+}
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
