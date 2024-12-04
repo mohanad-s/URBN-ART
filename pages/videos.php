@@ -35,9 +35,9 @@ include_once __DIR__ . '/../includes/db_connection.php';
                     data="https://www.youtube.com/embed/V5HjUjf4l5E" 
                     width="560" 
                     height="315">
-                    <param name="movie" value="https://www.youtube.com/embed/V5HjUjf4l5E">
-                    <param name="allowFullScreen" value="true">
-                    <param name="allowscriptaccess" value="always">
+                    <param name="movie" value="https://www.youtube.com/embed/V5HjUjf4l5E"/>
+                    <param name="allowFullScreen" value="true"/>
+                    <param name="allowscriptaccess" value="always"/>
                     <embed 
                         src="https://www.youtube.com/embed/V5HjUjf4l5E" 
                         type="application/x-shockwave-flash" 
@@ -57,9 +57,9 @@ include_once __DIR__ . '/../includes/db_connection.php';
                     data="https://www.youtube.com/embed/_Yxa0Si02YE" 
                     width="560" 
                     height="315">
-                    <param name="movie" value="https://www.youtube.com/embed/_Yxa0Si02YE">
-                    <param name="allowFullScreen" value="true">
-                    <param name="allowscriptaccess" value="always">
+                    <param name="movie" value="https://www.youtube.com/embed/_Yxa0Si02YE"/>
+                    <param name="allowFullScreen" value="true"/>
+                    <param name="allowscriptaccess" value="always"/>
                     <embed 
                         src="https://www.youtube.com/embed/_Yxa0Si02YE" 
                         type="application/x-shockwave-flash" 
@@ -79,8 +79,8 @@ include_once __DIR__ . '/../includes/db_connection.php';
                     data="https://www.youtube.com/embed/Qp6UX_RUUJE" 
                     width="560" 
                     height="315">
-                    <param name="movie" value="https://www.youtube.com/embed/Qp6UX_RUUJE">
-                    <param name="allowFullScreen" value="true">
+                    <param name="movie" value="https://www.youtube.com/embed/Qp6UX_RUUJE"/>
+                    <param name="allowFullScreen" value="true"/>
                     <param name="allowscriptaccess" value="always">
                     <embed 
                         src="https://www.youtube.com/embed/Qp6UX_RUUJE" 
