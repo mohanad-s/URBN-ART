@@ -1,7 +1,9 @@
 <?php
 $pageTitle = 'Home';
 $logoClass = 'centered';
-
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
