@@ -32,7 +32,7 @@ include_once __DIR__ . '/../includes/db_connection.php';
 
     <div class="owner-info">
         <div class="owner-description">
-            <h3>Vision & Leadership</h3>
+            <h3>Vision and Leadership</h3>
             <p>As the founder of URBN ART, Mohanad has revolutionized the graffiti art supply industry in Saudi Arabia. 
             With a passion for urban art and a keen understanding of artists' needs, he established the first dedicated 
             graffiti supplies brand in the country.</p>
