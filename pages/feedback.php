@@ -114,11 +114,12 @@ if (isset($_SESSION['feedback_error'])) {
 
             <div class="form-group">
             <label for="feedback">Your Feedback <span class="required">*</span></label>
-            <textarea id="feedback" name="feedback" rows="5" class="required"></textarea>
+            <textarea id="feedback" name="feedback" rows="5" cols="50" class="required"></textarea>
             </div>
         </fieldset>
-
+        <div class="form-group">
         <input type="submit" value="Submit Feedback" />
+    </div>
     </form>
 </div>
 
