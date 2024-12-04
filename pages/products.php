@@ -21,8 +21,8 @@ $result = $stmt->get_result();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo isset($pageTitle) ? "URBN ART - " . $pageTitle : 'URBN ART'; ?></title>
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
-    <link rel="stylesheet" type="text/css" href="/CSS/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/print.css" media="print" />
     <script type="text/javascript" src="../js/validation.js"></script>
     <script type="text/javascript" src="../js/gallery.js"></script>
 </head>
