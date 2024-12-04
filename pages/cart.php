@@ -6,7 +6,10 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 $pageTitle = 'Shopping Cart';
-include_once '../includes/header.php';
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+include_once __DIR__ . '../includes/db_connection.php';
 include_once '../includes/db_connection.php';
 
 // Get cart items
@@ -33,8 +36,26 @@ $delivery = 15; // Fixed delivery charge
 $grand_total = $subtotal + $vat + $delivery;
 ?>
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><?php echo isset($pageTitle) ? "URBN ART - " . $pageTitle : 'URBN ART'; ?></title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/print.css" media="print" />
+    <script type="text/javascript" src="../js/validation.js"></script>
+    <script type="text/javascript" src="../js/gallery.js"></script>
+</head>
+
+<body>
+<?php include_once '../includes/header.php'; ?>
+<div class="main">
+
 <h1>Shopping Cart</h1>
-<section class="shopping-cart">
+<div class="shopping-cart">
     <!-- Cart Items -->
     <div class="cart-items">
         <?php if (empty($cart_items)): ?>
@@ -69,7 +90,7 @@ $grand_total = $subtotal + $vat + $delivery;
             <button class="pay-now-btn" onclick="proceedToCheckout()">Pay Now</button>
         </div>
     <?php endif; ?>
-</section>
+    </div>
 
 <script>
 function removeFromCart(cartId) {
@@ -128,4 +149,8 @@ function addToCart(productId) {
     });
 }
 </script>
+
+</div>
 <?php include_once '../includes/footer.php'; ?>
+</body>
+</html>

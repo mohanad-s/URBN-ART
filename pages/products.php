@@ -3,7 +3,7 @@ $pageTitle = 'Products';
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-include_once __DIR__ . '/db_connection.php';
+include_once __DIR__ . '../includes/db_connection.php';
 include_once '../includes/db_connection.php';
 
 // Get all products from database
