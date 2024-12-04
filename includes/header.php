@@ -14,12 +14,12 @@ include_once __DIR__ . '/db_connection.php';
                     <div class="cart-wrapper">
                         🛒
                         <?php
-                        $conn = getDBConnection();
-                        $stmt = $conn->prepare("SELECT COUNT(*) as count FROM cart WHERE user_id = ?");
-                        $stmt->bind_param("i", $_SESSION['user_id']);
-                        $stmt->execute();
-                        $result = $stmt->get_result();
-                        $count = $result->fetch_assoc()['count'];
+                            $cart_conn = getDBConnection();
+                            $cart_stmt = $conn->prepare("SELECT COUNT(*) as count FROM cart WHERE user_id = ?");
+                            $cart_stmt->bind_param("i", $_SESSION['user_id']);
+                            $cart_stmt->execute();
+                            $cart_result = $cart_stmt->get_result();
+                            $count = $cart_result->fetch_assoc()['count'];
                         if($count > 0):
                         ?>
                             <span class="cart-count"><?php echo $count; ?></span>

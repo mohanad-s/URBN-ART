@@ -4,13 +4,12 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 include_once __DIR__ . '/../includes/db_connection.php';
-include_once '../includes/db_connection.php';
 
 // Get all products from database
 $conn = getDBConnection();
 $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();
-$result = $stmt->get_result();
+$products_result = $result->get_result();
 
 // Add these debug lines
 if (!$result) {
@@ -47,7 +46,7 @@ echo "Number of products: " . $result->num_rows; // This will tell us if we're g
         
         <?php
          echo "Before loop"; // Debug line
-        while ($product = $result->fetch_assoc()):
+         while ($product = $products_result->fetch_assoc()):
         echo "Processing product: " . $product['name']; // Debug line
         ?>
             <div class="product-item">
