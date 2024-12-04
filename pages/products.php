@@ -38,30 +38,7 @@ $result = $stmt->get_result();
 
     <h2>Products</h2>
     <div class="products-grid">
-        <?php 
-$query = "SELECT * FROM products ORDER BY id";
-$stmt = $conn->prepare($query);
-$stmt->execute();
-$result = $stmt->get_result();
 
-// Debugging
-echo "Executing query: " . $query . "<br>";
-echo "Number of rows: " . $result->num_rows . "<br>";
-
-// Verify the columns
-$fields = $result->fetch_fields();
-echo "Columns in result:<br>";
-foreach ($fields as $field) {
-    echo $field->name . "<br>";
-}
-
-// Print results
-while ($row = $result->fetch_assoc()) {
-    echo "<pre>";
-    print_r($row);
-    echo "</pre>";
-}
-?>
         <?php while ($product = $result->fetch_assoc()): ?>
             <div class="product-item">
                 <a href="product.php?id=<?php echo $product['id']; ?>">
