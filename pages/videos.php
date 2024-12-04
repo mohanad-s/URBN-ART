@@ -31,12 +31,14 @@ include_once __DIR__ . '/../includes/db_connection.php';
         <div class="video-item">
             <h3> URBN ART CONCRETE Effect</h3>
             <div class="video-wrapper">
-                <iframe 
-                    src="https://www.youtube.com/embed/V5HjUjf4l5E"
-                    width="560"
-                    height="315"
-                    frameborder="0"
-                    allowfullscreen="allowfullscreen"></iframe>
+                <object 
+                    data="https://www.youtube.com/embed/V5HjUjf4l5E" 
+                    width="560" 
+                    height="315">
+                    <param name="movie" value="https://www.youtube.com/embed/V5HjUjf4l5E"/>
+                    <param name="allowFullScreen" value="true"/>
+                    <param name="allowscriptaccess" value="always"/>
+                </object>
             </div>
             <p>Master the Concrete effect with our premium spray paint - Step by step tutorial.</p>
         </div>
@@ -44,12 +46,15 @@ include_once __DIR__ . '/../includes/db_connection.php';
         <div class="video-item">
             <h3>URBN ART DUSTCLEAN Spray</h3>
             <div class="video-wrapper">
-                <iframe
-                    src="https://www.youtube.com/embed/_Yxa0Si02YE"
-                    width="560"
-                    height="315"
-                    frameborder="0"
-                    allowfullscreen="allowfullscreen"></iframe>
+                <object 
+                    data="https://www.youtube.com/embed/_Yxa0Si02YE" 
+                    width="560" 
+                    height="315">
+                    <param name="movie" value="https://www.youtube.com/embed/_Yxa0Si02YE"/>
+                    <param name="allowFullScreen" value="true"/>
+                    <param name="allowscriptaccess" value="always"/>
+
+                </object>
             </div>
             <p> The highly-pure and dry DUSTCLEAN spray leaves no residues. Do not use on electronic devices.</p>
         </div>
@@ -57,12 +62,15 @@ include_once __DIR__ . '/../includes/db_connection.php';
         <div class="video-item">
             <h3>HOW TO USE URBN ART RUST Effect</h3>
             <div class="video-wrapper">
-                <iframe
-                    src="https://www.youtube.com/embed/Qp6UX_RUUJE"
-                    width="560"
-                    height="315"
-                    frameborder="0"
-                    allowfullscreen="allowfullscreen"></iframe>
+                <object 
+                    data="https://www.youtube.com/embed/Qp6UX_RUUJE" 
+                    width="560" 
+                    height="315">
+                    <param name="movie" value="https://www.youtube.com/embed/Qp6UX_RUUJE"/>
+                    <param name="allowFullScreen" value="true"/>
+                    <param name="allowscriptaccess" value="always"/>
+
+                </object>
             </div>
             <p>Master the Rust effect with our premium spray paint - Step by step tutorial.</p>
         </div>
