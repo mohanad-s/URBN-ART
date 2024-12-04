@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="signup-box">
         <div class="auth-content">
             <div class="signup-logo">
-                <img src="../images/URBN ARTWhite.png" alt="URBN ART Logo">
+                <img src="../images/URBN ARTWhite.png" alt="URBN ART Logo"/>
             </div>
             <h2>Create Account</h2>
         </div>

@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="login-box">
         <div class="auth-content">
             <div class="login-logo">
-                <img src="../images/URBN%20ARTWhite.png" alt="URBN ART Logo">
+                <img src="../images/URBN%20ARTWhite.png" alt="URBN ART Logo"/>
             </div>
             <h2>Welcome Back</h2>
         </div>
