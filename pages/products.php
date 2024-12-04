@@ -9,13 +9,13 @@ include_once __DIR__ . '/../includes/db_connection.php';
 $conn = getDBConnection();
 $stmt = $conn->prepare("SELECT * FROM products ORDER BY id");
 $stmt->execute();
-$products_result = $result->get_result();
+$products_result = $stmt->get_result();
 
 // Add these debug lines
-if (!$result) {
+if (!$products_result) {
     die("Query failed: " . $conn->error);
 }
-echo "Number of products: " . $result->num_rows; // This will tell us if we're getting products
+echo "Number of products: " . $$products_result->num_rows; // This will tell us if we're getting products
 
 ?>
 
