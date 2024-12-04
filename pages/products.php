@@ -41,16 +41,23 @@ $result = $stmt->get_result();
     <h2>Products</h2>
     <div class="products-grid">
         <?php 
-       // Print out query details
 $query = "SELECT * FROM products ORDER BY id";
-echo "Executing query: " . $query . "<br>";
+$stmt = $conn->prepare($query);
+$stmt->execute();
+$result = $stmt->get_result();
 
-// Print number of rows
+// Debugging
+echo "Executing query: " . $query . "<br>";
 echo "Number of rows: " . $result->num_rows . "<br>";
 
-// Print all results
-echo "Result contents:<br>";
-$result->data_seek(0);  // Reset pointer to start of results
+// Verify the columns
+$fields = $result->fetch_fields();
+echo "Columns in result:<br>";
+foreach ($fields as $field) {
+    echo $field->name . "<br>";
+}
+
+// Print results
 while ($row = $result->fetch_assoc()) {
     echo "<pre>";
     print_r($row);
