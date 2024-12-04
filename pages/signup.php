@@ -91,20 +91,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="success-message"><?php echo htmlspecialchars($success); ?></div>
         <?php endif; ?>
 
-        <form method="POST" action="signup.php">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-
-            <button type="submit">Sign Up</button>
+        <form method="post" action="signup.php">
+            <fieldset>
+               
+                    <label for="username">Username <span class="required">*</span></label>
+                    <input type="text" id="username" name="username" class="required" />
+                
+                
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="text" id="email" name="email" class="required" />
+                
+                
+                    <label for="password">Password <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" class="required" />
+                
+                
+                    <label for="confirm-password">Confirm Password <span class="required">*</span></label>
+                    <input type="password" id="confirm-password" name="confirm-password" class="required" />
+               
+                
+                    <input type="submit" value="Sign Up" />
+                
+            </fieldset>
         </form>
         <p>Already have an account? <a href="login.php">Login here.</a></p>
     </div>
