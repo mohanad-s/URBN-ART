@@ -44,7 +44,7 @@ include_once __DIR__ . '/../includes/db_connection.php';
                         allowscriptaccess="always" 
                         allowfullscreen="true" 
                         width="560" 
-                        height="315">
+                        height="315"/>
                 </object>
             </div>
             <p>Master the Concrete effect with our premium spray paint - Step by step tutorial.</p>
@@ -66,7 +66,7 @@ include_once __DIR__ . '/../includes/db_connection.php';
                         allowscriptaccess="always" 
                         allowfullscreen="true" 
                         width="560" 
-                        height="315">
+                        height="315"/>
                 </object>
             </div>
             <p> The highly-pure and dry DUSTCLEAN spray leaves no residues. Do not use on electronic devices.</p>
@@ -81,14 +81,14 @@ include_once __DIR__ . '/../includes/db_connection.php';
                     height="315">
                     <param name="movie" value="https://www.youtube.com/embed/Qp6UX_RUUJE"/>
                     <param name="allowFullScreen" value="true"/>
-                    <param name="allowscriptaccess" value="always">
+                    <param name="allowscriptaccess" value="always"/>
                     <embed 
                         src="https://www.youtube.com/embed/Qp6UX_RUUJE" 
                         type="application/x-shockwave-flash" 
                         allowscriptaccess="always" 
                         allowfullscreen="true" 
                         width="560" 
-                        height="315">
+                        height="315"/>
                 </object>
             </div>
             <p>Master the Rust effect with our premium spray paint - Step by step tutorial.</p>
