@@ -3,7 +3,7 @@ $pageTitle = 'Services';
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-include_once __DIR__ . '../includes/db_connection.php';
+include_once __DIR__ . '/../includes/db_connection.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

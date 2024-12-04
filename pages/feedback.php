@@ -3,7 +3,7 @@ $pageTitle = 'Feedback';
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-include_once __DIR__ . '../includes/db_connection.php';
+include_once __DIR__ . '/../includes/db_connection.php';
 
 // Initialize error message variable
 $errorMsg = '';
