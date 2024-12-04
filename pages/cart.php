@@ -64,7 +64,7 @@ $grand_total = $subtotal + $vat + $delivery;
             <?php foreach ($cart_items as $item): ?>
                 <div class="cart-item" id="cart-item-<?php echo $item['cart_id']; ?>">
                     <img src="<?php echo htmlspecialchars($item['image_path']); ?>" 
-                         alt="<?php echo htmlspecialchars($item['name']); ?>">
+                         alt="<?php echo htmlspecialchars($item['name']); ?>"/>
                     <div class="cart-item-info">
                         <h2><?php echo htmlspecialchars($item['name']); ?></h2>
                         <p><?php echo number_format($item['price'], 2); ?> SAR</p>
@@ -72,7 +72,7 @@ $grand_total = $subtotal + $vat + $delivery;
                     <img class="delete-icon" 
                          src="../images/delete.png" 
                          alt="Delete" 
-                         onclick="removeFromCart(<?php echo $item['cart_id']; ?>)">
+                         onclick="removeFromCart(<?php echo $item['cart_id']; ?>)"/>
                 </div>
             <?php endforeach; ?>
         <?php endif; ?>
