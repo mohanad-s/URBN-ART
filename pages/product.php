@@ -69,7 +69,7 @@ if (!$product) {
     <button disabled>Out of Stock</button>
 <?php endif; ?>
     </div>
-    <script>
+    <script type="text/javascript">
 function addToCart(productId) {
     console.log('Adding product ID:', productId); // Debug line
     
