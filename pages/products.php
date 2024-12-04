@@ -13,8 +13,9 @@ $stmt->execute();
 $result = $stmt->get_result();
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&amp;display=swap" rel="stylesheet" />
@@ -28,7 +29,9 @@ $result = $stmt->get_result();
 </head>
 
 <body>
+
 <?php include_once '../includes/header.php'; ?>
+
 <div class="main">
 <div class="back-link">
     <a href="../includes/index.php">Back to Home</a>
@@ -36,19 +39,20 @@ $result = $stmt->get_result();
 
 
     <h2>Products</h2>
-    <section class="products-grid">
+    <div class="products-grid">
         <?php while ($product = $result->fetch_assoc()): ?>
             <div class="product-item">
                 <a href="product.php?id=<?php echo $product['id']; ?>">
+
                     <img src="<?php echo htmlspecialchars($product['image_path']); ?>" 
                          alt="<?php echo htmlspecialchars($product['name']); ?>"
-                         class="<?php echo strpos($product['category'], 'Accessories') !== false ? 'large-image' : ''; ?> hover-effect">
+                         class="<?php echo strpos($product['category'], 'Accessories') !== false ? 'large-image' : ''; ?> hover-effect"/>
                 </a>
                 <p><?php echo htmlspecialchars($product['name']); ?></p>
                 <p class="price"><?php echo number_format($product['price'], 2); ?> SAR</p>
             </div>
         <?php endwhile; ?>
-    </section>
+        </div>
 
 </div>
 <?php 
