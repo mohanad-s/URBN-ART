@@ -30,6 +30,9 @@ Video Tutorials: Watch instructional videos on graffiti techniques
 
 ## Installation and Setup
 1- Clone the repository
+
 2- Set up a MySQL database and import the SQL schema
+
 3- Configure database connection in /includes/db_connection.php
+
 4- Deploy to a PHP-enabled web server
